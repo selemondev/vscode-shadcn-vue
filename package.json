@@ -30,7 +30,7 @@
     "shadcn-vue snippets",
     "vue 3 typescript snippets"
   ],
-  "icon": "images/icon.png",
+  "icon": "./src/images/icon.png",
   "galleryBanner": {
     "color": "#C80000",
     "theme": "dark"
