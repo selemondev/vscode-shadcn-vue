@@ -1,5 +1,5 @@
 <p align="center">
- <img align="center" src="./src/images/icon.png" height="96" />
+ <img align="center" src="https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/images/icon.png" height="96" />
  <h1 align="center">
   shadcn-vue
  </h1>
@@ -9,26 +9,26 @@ This VSCode extension will help you install [shadcn/vue](https://shadcn-vue.com)
 
 ## Initialize the Shadcn/Vue CLI
 
-![to initialize CLI open the command palette and search for shadcn/vue: install cli command](./src/assets/images/init-cli.png)
+![to initialize CLI open the command palette and search for shadcn/vue: install cli command](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/init-cli.png)
 
 ## Install components
 
-![to initialize CLI open the command palette and search for shadcn/vue: add new component](./src/assets/images/add-new-component.png)
+![to initialize CLI open the command palette and search for shadcn/vue: add new component](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/add-new-component.png)
 
 
 ## Choose a component to install from the list
 
-![choose a component to install from the list](./src/assets/images/add-new-components.png)
+![choose a component to install from the list](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/add-new-components.png)
 
 
 ## Open the Shadcn-Vue documentation
 
-![open the shadcn-vue documentation](./src/assets/images/shadcn-vue-docs.png)
+![open the shadcn-vue documentation](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/shadcn-vue-docs.png)
 
 
 ## Navigate to a particular component's documentation page
 
-![navigate to a particular component's documentation page](./src/assets/images/shadcn-vue-component-docs.png)
+![navigate to a particular component's documentation page](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/shadcn-vue-component-docs.png)
 
 
 
@@ -36,7 +36,7 @@ This VSCode extension will help you install [shadcn/vue](https://shadcn-vue.com)
 
 Easily import and use shadcn-vue components with ease using snippets within VSCode. Just type `cn` or `shadcn` in your vue file and choose from an array of components to use.
 
-![shadcn-vue-snippets-example](./src/assets/images/shadcn-vue-import.png)
+![shadcn-vue-snippets-example](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/shadcn-vue-import.png)
 
 
 ### How it works
