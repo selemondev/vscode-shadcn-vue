@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-import { ofetch } from "ofetch"
+import { ofetch } from "ofetch";
 import { type } from "os";
 import { detectPackageManager } from "./vscode";
 
