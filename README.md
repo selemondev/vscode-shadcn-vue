@@ -5,7 +5,7 @@
  </h1>
 </p>
 
-This VSCode extension will help you install [shadcn/vue](https://shadcn-vue.com) components directly from VS Code.
+This VSCode extension will help you install [shadcn/vue](https://shadcn-vue.com) components directly from your VS Code.
 
 ## Initialize the Shadcn/Vue CLI
 
