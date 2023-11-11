@@ -1,8 +1,8 @@
 {
   "name": "shadcn-vue",
-  "version": "0.0.0",
-  "displayName": "Shadcn/Vue",
-  "description": "Add components and snippets from shadcn/vue directly from VS Code",
+  "version": "0.0.1",
+  "displayName": "shadcn/vue",
+  "description": "Integrate components and snippets from Shadcn/Vue directly into your IDE.",
   "publisher": "Selemondev",
   "repository": {
     "type": "git",
