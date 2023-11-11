@@ -1,6 +1,11 @@
-# Shadcn/Vue
+<p align="center">
+ <img align="center" src="./src/images/icon.png" height="96" />
+ <h1 align="center">
+  shadcn-vue
+ </h1>
+</p>
 
-This will help install the [shadcn/vue](https://shadcn-vue.com) components directly from VS Code
+This VSCode extension will help you install [shadcn/vue](https://shadcn-vue.com) components directly from VS Code.
 
 ## Initialize the Shadcn/Vue CLI
 
@@ -66,3 +71,15 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 ### How to contribute?
 
 Use this link - [Snippet Generation](https://snippet-generator.app/?description=https://shadcn-vue.com/docs/components&tabtrigger=shadcn-&snippet=%22https://shadcn-vue.com/docs/components%22:+%7B%0A++%22prefix%22:+%22shadcn-%22,%0A++%22body%22:+%5B%0A++%5D,%0A++%22description%22:+%22https://shadcn-vue.com/docs/components%22%0A%7D&mode=vscode) to generate snippets and add/update them to the `snippets` folder that is located in the `src` accordingly.
+
+
+### Credits 
+
+All credits go to these amazing developers
+
+- [Shadcn UI](https://ui.shadcn.com) for creating this beautiful project.
+- [Shadcn Vue](https://shadcn-vue.com) for creating the Vue port of Shadcn UI.
+- [Radix Vue](https://radix-vue.com) for doing all the hard work to make sure components are accessible.
+- [VueUse](https://vueuse.org) for providing many useful utilities.
+- [Suhel Makkad](https://github.com/SuhelMakkad/vscode-shadcn-ui) for creating the Shadcn UI VSCode extension.
+- [Neeraj Dalal](https://github.com/nrjdalal/shadcn-ui-snippets) for creating the Shadcn UI Snippets VSCode extension.
