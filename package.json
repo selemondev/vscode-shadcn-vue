@@ -1,6 +1,6 @@
 {
   "name": "shadcn-vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "shadcn/vue",
   "description": "Integrate components and snippets from Shadcn/Vue directly into your IDE.",
   "publisher": "Selemondev",
@@ -43,17 +43,14 @@
         "language": "javascript",
         "path": "./src/snippets/imports.code-snippets"
       },
-
       {
         "language": "typescript",
         "path": "./src/snippets/imports.code-snippets"
       },
-
       {
         "language": "html",
         "path": "./src/snippets/help.code-snippets"
       },
-
       {
         "language": "html",
         "path": "./src/snippets/usage.code-snippets"
@@ -88,7 +85,8 @@
     "compile": "webpack",
     "watch": "webpack --watch",
     "package": "webpack --mode production --devtool hidden-source-map",
-    "pretest": "pnpm run compile && pnpm run lint",
+    "pretest": "yarn run compile && yarn run lint",
+    "release": "yarn vscode:prepublish && bumpp --commit --push && yarn deploy",
     "lint": "eslint src --ext ts"
   },
   "devDependencies": {
@@ -99,6 +97,7 @@
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
     "@vscode/test-electron": "^2.3.2",
+    "bumpp": "^9.2.0",
     "eslint": "^8.41.0",
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
