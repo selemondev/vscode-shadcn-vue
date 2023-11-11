@@ -1,0 +1,405 @@
+{
+    "Accordion": {
+      "prefix": ["shadcn-i-accordion", "cni-accordion"],
+      "body": [
+        "import {",
+        "  Accordion,",
+        "  AccordionContent,",
+        "  AccordionItem,",
+        "  AccordionTrigger,",
+        "} from \"@/components/ui/accordion\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components"
+    },
+  
+    "Alert": {
+      "prefix": ["shadcn-i-alert", "cni-alert"],
+      "body": [
+        "import { Alert, AlertDescription, AlertTitle } from \"@/components/ui/alert\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/alert.html"
+    },
+  
+    "Alert Dialog": {
+      "prefix": ["shadcn-i-alert-dialog", "cni-alert-dialog"],
+      "body": [
+        "import {",
+        "  AlertDialog,",
+        "  AlertDialogAction,",
+        "  AlertDialogCancel,",
+        "  AlertDialogContent,",
+        "  AlertDialogDescription,",
+        "  AlertDialogFooter,",
+        "  AlertDialogHeader,",
+        "  AlertDialogTitle,",
+        "  AlertDialogTrigger,",
+        "} from \"@/components/ui/alert-dialog\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/alert-dialog.html"
+    },
+  
+    "Aspect Ratio": {
+      "prefix": ["shadcn-i-aspect-ratio", "cni-aspect-ratio"],
+      "body": [
+        "import { AspectRatio } from \"@/components/ui/aspect-ratio\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/aspect-ratio.html"
+    },
+  
+    "Avatar": {
+      "prefix": ["shadcn-i-avatar", "cni-avatar"],
+      "body": [
+        "import { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/avatar.html"
+    },
+  
+    "Badge": {
+      "prefix": ["shadcn-i-badge", "cni-badge"],
+      "body": ["import { Badge } from \"@/components/ui/badge\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/badge.html"
+    },
+  
+    "Button": {
+      "prefix": ["shadcn-i-button", "cni-button"],
+      "body": ["import { Button } from \"@/components/ui/button\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/button.html"
+    },
+
+    "Calendar": {
+      "prefix": ["shadcn-i-calendar", "cni-calendar"],
+      "body": [
+        "import { Calendar } from \"@/components/ui/calendar\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/calendar.html"
+    },
+  
+    "Card": {
+      "prefix": ["shadcn-i-card", "cni-card"],
+      "body": [
+        "import {",
+        "  Card,",
+        "  CardContent,",
+        "  CardDescription,",
+        "  CardFooter,",
+        "  CardHeader,",
+        "  CardTitle,",
+        "} from \"@/components/ui/card\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/card.html"
+    },
+  
+    "Checkbox": {
+      "prefix": ["shadcn-i-checkbox", "cni-checkbox"],
+      "body": ["import { Checkbox } from \"@/components/ui/checkbox\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/checkbox.html"
+    },
+  
+    "Collapsible": {
+      "prefix": ["shadcn-i-collapsible", "cni-collapsible"],
+      "body": [
+        "import {",
+        "  Collapsible,",
+        "  CollapsibleContent,",
+        "  CollapsibleTrigger,",
+        "} from \"@/components/ui/collapsible\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/collapsible.html"
+    },
+  
+    "Command": {
+      "prefix": ["shadcn-i-command", "cni-command"],
+      "body": [
+        "import {",
+        "  Command,",
+        "  CommandDialog,",
+        "  CommandEmpty,",
+        "  CommandGroup,",
+        "  CommandInput,",
+        "  CommandItem,",
+        "  CommandList,",
+        "  CommandSeparator,",
+        "  CommandShortcut,",
+        "} from \"@/components/ui/command\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/command.html"
+    },
+  
+    "Context Menu": {
+      "prefix": ["shadcn-i-context-menu", "cni-context-menu"],
+      "body": [
+        "import { ContextMenu, ContextMenuCheckboxItem, ContextMenuContent, ContextMenuItem, ContextMenuLabel, ContextMenuRadioGroup, ContextMenuRadioItem, ContextMenuSeparator, ContextMenuShortcut, ContextMenuSub, ContextMenuSubContent, ContextMenuSubTrigger, ContextMenuTrigger } from \"@/components/ui/context-menu\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/context-menu.html"
+    },
+  
+    "Dialog": {
+      "prefix": ["shadcn-i-dialog", "cni-dialog"],
+      "body": [
+        "import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from \"@/components/ui/dialog\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/dialog.html"
+    },
+  
+    "Dropdown Menu": {
+      "prefix": ["shadcn-i-dropdown-menu", "cni-dropdown-menu"],
+      "body": [
+        "import {",
+        "  DropdownMenu,",
+        "  DropdownMenuContent,",
+        "  DropdownMenuGroup,",
+        "  DropdownMenuItem,",
+        "  DropdownMenuLabel,",
+        "  DropdownMenuPortal,",
+        "  DropdownMenuSeparator,",
+        "  DropdownMenuShortcut,",
+        "  DropdownMenuSub,",
+        "  DropdownMenuSubContent,",
+        "  DropdownMenuSubTrigger,",
+        "  DropdownMenuTrigger,",
+        "} from \"@/components/ui/dropdown-menu\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/dropdown-menu.html"
+    },
+  
+    "Hover Card": {
+      "prefix": ["shadcn-i-hover-card", "cni-hover-card"],
+      "body": [
+        "import {",
+        "  HoverCard,",
+        "  HoverCardContent,",
+        "  HoverCardTrigger,",
+        "} from \"@/components/ui/hover-card\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/hover-card.html"
+    },
+  
+    "Input": {
+      "prefix": ["shadcn-i-input", "cni-input"],
+      "body": ["import { Input } from \"@/components/ui/input\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/input.html"
+    },
+  
+    "Label": {
+      "prefix": ["shadcn-i-label", "cni-label"],
+      "body": ["import { Label } from \"@/components/ui/label\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/label.html"
+    },
+  
+    "Menubar": {
+      "prefix": ["shadcn-i-menubar", "cni-menubar"],
+      "body": [
+        "import {",
+        "  Menubar,",
+        "  MenubarContent,",
+        "  MenubarItem,",
+        "  MenubarMenu,",
+        "  MenubarSeparator,",
+        "  MenubarShortcut,",
+        "  MenubarTrigger,",
+        "} from \"@/components/ui/menubar\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/menu-bar.html"
+    },
+  
+    "Navigation Menu": {
+      "prefix": ["shadcn-i-navigation-menu", "cni-navigation-menu"],
+      "body": [
+        "import {",
+        "  NavigationMenu,",
+        "  NavigationMenuContent,",
+        "  NavigationMenuIndicator,",
+        "  NavigationMenuItem,",
+        "  NavigationMenuLink,",
+        "  NavigationMenuList,",
+        "  NavigationMenuTrigger,",
+        "  NavigationMenuViewport,",
+        "} from \"@/components/ui/navigation-menu\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/navigation-menu.html"
+    },
+    "Pagination": {
+      "prefix": ["shadcn-i-pagination", "cni-pagination"],
+      "body": [
+        "import {",
+        "  Pagination,",
+        "  PaginationEllipsis,",
+        "  PaginationFirst,",
+        "  PaginationLast,",
+        "  PaginationList,",
+        "  PaginationListItem,",
+        "  PaginationNext,",
+        "  PaginationPrev,",
+        "} from '@/components/ui/pagination'",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/pagination.html"
+    },
+  
+    "Popover": {
+      "prefix": ["shadcn-i-popover", "cni-popover"],
+      "body": [
+        "import {",
+        "  Popover,",
+        "  PopoverContent,",
+        "  PopoverTrigger,",
+        "} from \"@/components/ui/popover\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/popover.html"
+    },
+  
+    "Progress": {
+      "prefix": ["shadcn-i-progress", "cni-progress"],
+      "body": ["import { Progress } from \"@/components/ui/progress\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/progress.html"
+    },
+  
+    "Radio Group": {
+      "prefix": ["shadcn-i-radio-group", "cni-radio-group"],
+      "body": [
+        "import { Label } from \"@/components/ui/label\"",
+        "import { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/radio-group.html"
+    },
+  
+    "Scroll Area": {
+      "prefix": ["shadcn-i-scroll-area", "cni-scroll-area"],
+      "body": ["import { ScrollArea } from \"@/components/ui/scroll-area\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/scroll-area.html"
+    },
+  
+    "Select": {
+      "prefix": ["cni-select"],
+      "body": [
+        "import {",
+        "  Select,",
+        "  SelectContent,",
+        "  SelectItem,",
+        "  SelectTrigger,",
+        "  SelectValue,",
+        "} from \"@/components/ui/select\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/select.html"
+    },
+  
+    "Separator": {
+      "prefix": ["shadcn-i-separator", "cni-separator"],
+      "body": ["import { Separator } from \"@/components/ui/separator\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/separator.html"
+    },
+  
+    "Sheet": {
+      "prefix": ["shadcn-i-sheet", "cni-sheet"],
+      "body": [
+        "import {",
+        "  Sheet,",
+        "  SheetContent,",
+        "  SheetDescription,",
+        "  SheetHeader,",
+        "  SheetTitle,",
+        "  SheetTrigger,",
+        "} from \"@/components/ui/sheet\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/sheet.html"
+    },
+  
+    "Skeleton": {
+      "prefix": ["shadcn-i-skeleton", "cni-skeleton"],
+      "body": ["import { Skeleton } from \"@/components/ui/skeleton\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/skeleton.html"
+    },
+  
+    "Slider": {
+      "prefix": ["shadcn-i-slider", "cni-slider"],
+      "body": ["import { Slider } from \"@/components/ui/slider\"", "import { cn } from \"@/lib/utils\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/slider.html"
+    },
+  
+    "Switch": {
+      "prefix": ["shadcn-i-switch", "cni-switch"],
+      "body": ["import { Switch } from \"@/components/ui/switch\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/switch.html"
+    },
+  
+    "Table": {
+      "prefix": ["shadcn-i-table", "cni-table"],
+      "body": [
+        "import {",
+        "  Table,",
+        "  TableBody,",
+        "  TableCaption,",
+        "  TableCell,",
+        "  TableHead,",
+        "  TableHeader,",
+        "  TableRow,",
+        "} from \"@/components/ui/table\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/table.html"
+    },
+  
+    "Tabs": {
+      "prefix": ["shadcn-i-tabs", "cni-tabs"],
+      "body": [
+        "import { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/tabs.html"
+    },
+  
+    "Textarea": {
+      "prefix": ["shadcn-i-textarea", "cni-textarea"],
+      "body": ["import { Textarea } from \"@/components/ui/textarea\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/textarea.html"
+    },
+
+    "Toast": {
+      "prefix": ["shadcn-i-toast", "cni-toast"],
+      "body": [
+        "import { Button } from '@/components/ui/button'",
+        "import { useToast } from '@/components/ui/toast/use-toast'"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/toast.html"
+    },
+  
+    "Toggle": {
+      "prefix": ["shadcn-i-toggle", "cni-toggle"],
+      "body": ["import { Toggle } from \"@/components/ui/toggle\"", ""],
+      "description": "https://shadcn-vue.com/docs/components/toggle.html"
+    },
+  
+    "Tooltip": {
+      "prefix": ["shadcn-i-tooltip", "cni-tooltip"],
+      "body": [
+        "import {",
+        "  Tooltip,",
+        "  TooltipContent,",
+        "  TooltipProvider,",
+        "  TooltipTrigger,",
+        "} from \"@/components/ui/tooltip\"",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/tooltip.html"
+    }
+  }
+  

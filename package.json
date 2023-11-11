@@ -1,0 +1,116 @@
+{
+  "name": "shadcn-vue",
+  "version": "0.0.0",
+  "displayName": "Shadcn/Vue",
+  "description": "Add components and snippets from shadcn/vue directly from VS Code",
+  "publisher": "Selemondev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selemondev/vscode-shadcn-vue"
+  },
+  "bugs": {
+    "url": "https://github.com/selemondev/vscode-shadcn-vue/issues",
+    "email": "selemonsrdev@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "keywords": [
+    "vue3",
+    "shadcn-vue",
+    "shadcn-vue-snippet",
+    "shadcn-vue-snippets",
+    "snippet",
+    "snippets",
+    "vue snippets",
+    "shadcn-vue snippets",
+    "vue 3 typescript snippets"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./src/snippets/imports.code-snippets"
+      },
+
+      {
+        "language": "typescript",
+        "path": "./src/snippets/imports.code-snippets"
+      },
+
+      {
+        "language": "html",
+        "path": "./src/snippets/help.code-snippets"
+      },
+
+      {
+        "language": "html",
+        "path": "./src/snippets/usage.code-snippets"
+      }
+    ],
+    "commands": [
+      {
+        "command": "shadcn-vue.initCli",
+        "title": "shadcn/vue: Install CLI"
+      },
+      {
+        "command": "shadcn-vue.addNewComponent",
+        "title": "shadcn/vue: Add New Component"
+      },
+      {
+        "command": "shadcn-vue.gotoComponentDoc",
+        "title": "shadcn/vue: Open Component Documentation"
+      },
+      {
+        "command": "shadcn-vue.reloadComponentList",
+        "title": "shadcn/vue: Reload Component List"
+      },
+      {
+        "command": "shadcn-vue.gotoDoc",
+        "title": "shadcn/vue: Open Documentation"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "deploy": "vsce publish",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@types/vscode": "^1.54.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "@vscode/test-electron": "^2.3.2",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.1.3",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "ofetch": "^1.3.3"
+  }
+}

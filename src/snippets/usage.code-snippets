@@ -1,0 +1,594 @@
+{
+    "Accordion": {
+      "prefix": ["shadcn-x-accordion", "cnx-accordion"],
+      "body": [
+        " <Accordion type=\"single\" collapsible>",
+        "    <AccordionItem value=\"item-1\">",
+        "      <AccordionTrigger>Is it accessible?</AccordionTrigger>",
+        "      <AccordionContent>",
+        "        Yes. It adheres to the WAI-ARIA design pattern.",
+        "      </AccordionContent>",
+        "    </AccordionItem>",
+        "  </Accordion>",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/accordion.html"
+    },
+  
+    "Alert": {
+      "prefix": ["shadcn-x-alert", "cnx-alert"],
+      "body": [
+        "  <Alert>",
+        "    <AlertTitle>Heads up!</AlertTitle>",
+        "    <AlertDescription>",
+        "      You can add components to your app using the cli.",
+        "    </AlertDescription>",
+        "  </Alert>",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/alert.html"
+    },
+  
+    "Alert Destructive": {
+      "prefix": ["shadcn-x-alert-destructive", "cnx-alert-destructive"],
+      "body": [
+        "  <Alert variant=\"destructive\">",
+        "    <AlertTitle>Error</AlertTitle>",
+        "    <AlertDescription>",
+        "      Your session has expired. Please log in again.",
+        "    </AlertDescription>",
+        "  </Alert>",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/alert.html"
+    },
+  
+    "Alert Dialog": {
+      "prefix": ["shadcn-x-alert-dialog", "cnx-alert-dialog"],
+      "body": [
+        "  <AlertDialog>",
+        "    <AlertDialogTrigger>Open</AlertDialogTrigger>",
+        "    <AlertDialogContent>",
+        "      <AlertDialogHeader>",
+        "        <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>",
+        "        <AlertDialogDescription>",
+        "          This action cannot be undone. This will permanently delete your account",
+        "          and remove your data from our servers.",
+        "        </AlertDialogDescription>",
+        "      </AlertDialogHeader>",
+        "      <AlertDialogFooter>",
+        "        <AlertDialogCancel>Cancel</AlertDialogCancel>",
+        "        <AlertDialogAction>Continue</AlertDialogAction>",
+        "      </AlertDialogFooter>",
+        "    </AlertDialogContent>",
+        "  </AlertDialog>",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/alert-dialog.html"
+    },
+  
+    "Aspect Ratio": {
+      "prefix": ["shadcn-x-aspect-ratio", "cnx-aspect-ratio"],
+      "body": [
+        "<div class=\"w-[450px]\">",
+        "    <AspectRatio :ratio=\"16 / 9\">",
+        "      <img src=\"...\" alt=\"Image\" class=\"rounded-md object-cover\">",
+        "    </AspectRatio>",
+        "</div>",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/aspect-ratio.html"
+    },
+  
+    "Avatar": {
+      "prefix": ["shadcn-x-avatar", "cnx-avatar"],
+      "body": [
+        "<Avatar>",
+        "    <AvatarImage src=\"https://github.com/radix-vue.png\" alt=\"@radix-vue\" />",
+        "    <AvatarFallback>CN</AvatarFallback>",
+        "</Avatar>",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/avatar.html"
+    },
+  
+    "Badge": {
+      "prefix": ["shadcn-x-badge", "cnx-badge"],
+      "body": [
+        "<Badge>Badge</Badge>",
+      ],    
+      "description": "https://shadcn-vue.com/docs/components/badge.html"
+    },
+  
+    "Badge Destructive": {
+      "prefix": ["shadcn-x-badge-destructive", "cnx-badge-destructive"],
+      "body": [
+        "<Badge variant=\"destructive\">",
+        "    Destructive",
+        "</Badge>",
+      ],    
+      "description": "https://shadcn-vue.com/docs/components/badge.html"
+    },
+  
+    "Badge Outline": {
+      "prefix": ["shadcn-x-badge-outline", "cnx-badge-outline"],
+      "body": [
+        "<Badge variant=\"outline\">",
+        "    Outline",
+        "</Badge>",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/badge.html"
+    },
+  
+    "Badge Secondary": {
+      "prefix": ["shadcn-x-badge-secondary", "cnx-badge-secondary"],
+      "body": [
+        "<Badge variant=\"secondary\">",
+        "    Secondary",
+        "</Badge>",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/badge.html"
+    },
+  
+    "Button": {
+      "prefix": ["shadcn-x-button", "cnx-button"],
+      "body": [
+        "<Button>Button</Button>",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/button.html"
+    },
+
+    "Calendar": {
+        "prefix": ["shadcn-x-calendar", "cnx-calendar"],
+        "body": [
+            "<Calendar />",
+        ],
+        "description": "https://shadcn-vue.com/docs/components/calendar.html"
+    },
+    
+  
+    "Card": {
+      "prefix": ["shadcn-x-card", "cnx-card"],
+      "body": [
+        "  <Card>",
+        "    <CardHeader>",
+        "      <CardTitle>Card Title</CardTitle>",
+        "      <CardDescription>Card Description</CardDescription>",
+        "    </CardHeader>",
+        "    <CardContent>",
+        "      Card Content",
+        "    </CardContent>",
+        "    <CardFooter>",
+        "      Card Footer",
+        "    </CardFooter>",
+        "  </Card>",
+      ],    
+      "description": "https://shadcn-vue.com/docs/components/card.html"
+    },
+  
+    "Checkbox": {
+      "prefix": ["shadcn-x-checkbox", "cnx-checkbox"],
+      "body": [
+        "<Checkbox id=\"terms\" />",
+      ],
+      "description": "https://shadcn-vue.com/docs/components/checkbox.html"
+    },
+  
+    "Collapsible": {
+      "prefix": ["shadcn-x-collapsible", "cnx-collapsible"],
+      "body": [
+        "<Collapsible>",
+        "  <CollapsibleTrigger>Can I use this in my project?</CollapsibleTrigger>",
+        "  <CollapsibleContent>",
+        "    Yes. Free to use for personal and commercial projects. No attribution",
+        "    required.",
+        "  </CollapsibleContent>",
+        "</Collapsible>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/collapsible.html"
+    },
+  
+    "Command": {
+      "prefix": ["shadcn-x-command", "cnx-command"],
+      "body": [
+        "<Command>",
+        "  <CommandInput placeholder=\"Type a command or search...\" />",
+        "  <CommandList>",
+        "    <CommandEmpty>No results found.</CommandEmpty>",
+        "    <CommandGroup heading=\"Suggestions\">",
+        "      <CommandItem>Calendar</CommandItem>",
+        "      <CommandItem>Search Emoji</CommandItem>",
+        "      <CommandItem>Calculator</CommandItem>",
+        "    </CommandGroup>",
+        "    <CommandSeparator />",
+        "    <CommandGroup heading=\"Settings\">",
+        "      <CommandItem>Profile</CommandItem>",
+        "      <CommandItem>Billing</CommandItem>",
+        "      <CommandItem>Settings</CommandItem>",
+        "    </CommandGroup>",
+        "  </CommandList>",
+        "</Command>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/command.html"
+    },
+  
+    "Context Menu": {
+      "prefix": ["shadcn-x-context-menu", "cnx-context-menu"],
+      "body": [
+        "<ContextMenu>",
+        "  <ContextMenuTrigger>Right click</ContextMenuTrigger>",
+        "  <ContextMenuContent>",
+        "    <ContextMenuItem>Profile</ContextMenuItem>",
+        "    <ContextMenuItem>Billing</ContextMenuItem>",
+        "    <ContextMenuItem>Team</ContextMenuItem>",
+        "    <ContextMenuItem>Subscription</ContextMenuItem>",
+        "  </ContextMenuContent>",
+        "</ContextMenu>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/context-menu.html"
+    },
+  
+    "Dialog": {
+      "prefix": ["shadcn-x-dialog", "cnx-dialog"],
+      "body": [
+        "<Dialog>",
+        "  <DialogTrigger>Open</DialogTrigger>",
+        "  <DialogContent>",
+        "    <DialogHeader>",
+        "      <DialogTitle>Are you sure absolutely sure?</DialogTitle>",
+        "      <DialogDescription>",
+        "        This action cannot be undone. This will permanently delete your account",
+        "        and remove your data from our servers.",
+        "      </DialogDescription>",
+        "    </DialogHeader>",
+        "  </DialogContent>",
+        "</Dialog>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/dialog.html"
+    },
+  
+    "Dropdown Menu": {
+      "prefix": ["shadcn-x-dropdown-menu", "cnx-dropdown-menu"],
+      "body": [
+        "<DropdownMenu>",
+        "  <DropdownMenuTrigger>Open</DropdownMenuTrigger>",
+        "  <DropdownMenuContent>",
+        "    <DropdownMenuLabel>My Account</DropdownMenuLabel>",
+        "    <DropdownMenuSeparator />",
+        "    <DropdownMenuItem>Profile</DropdownMenuItem>",
+        "    <DropdownMenuItem>Billing</DropdownMenuItem>",
+        "    <DropdownMenuItem>Team</DropdownMenuItem>",
+        "    <DropdownMenuItem>Subscription</DropdownMenuItem>",
+        "  </DropdownMenuContent>",
+        "</DropdownMenu>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/dropdown-menu.html"
+    },
+  
+    "Hover Card": {
+      "prefix": ["shadcn-x-hover-card", "cnx-hover-card"],
+      "body": [
+        "<HoverCard>",
+        "  <HoverCardTrigger>Hover</HoverCardTrigger>",
+        "  <HoverCardContent>",
+        "    The React Framework – created and maintained by @vercel.",
+        "  </HoverCardContent>",
+        "</HoverCard>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/hover-card.html"
+    },
+  
+    "Input": {
+      "prefix": ["shadcn-x-input", "cnx-input"],
+      "body": ["<Input />", ""],
+      "description": "https://shadcn-vue.com/docs/components/input.html"
+    },
+  
+    "Label": {
+      "prefix": ["shadcn-x-label", "cnx-label"],
+      "body": ["<Label for=\"email\">Your email address</Label>", ""],
+      "description": "https://shadcn-vue.com/docs/components/label.html"
+    },
+  
+    "Menubar": {
+      "prefix": ["shadcn-x-menubar", "cnx-menubar"],
+      "body": [
+        "<Menubar>",
+        "  <MenubarMenu>",
+        "    <MenubarTrigger>File</MenubarTrigger>",
+        "    <MenubarContent>",
+        "      <MenubarItem>",
+        "        New Tab <MenubarShortcut>⌘T</MenubarShortcut>",
+        "      </MenubarItem>",
+        "      <MenubarItem>New Window</MenubarItem>",
+        "      <MenubarSeparator />",
+        "      <MenubarItem>Share</MenubarItem>",
+        "      <MenubarSeparator />",
+        "      <MenubarItem>Print</MenubarItem>",
+        "    </MenubarContent>",
+        "  </MenubarMenu>",
+        "</Menubar>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/menubar.html"
+    },
+  
+    "Navigation Menu": {
+      "prefix": ["shadcn-x-navigation-menu", "cnx-navigation-menu"],
+      "body": [
+        "<NavigationMenu>",
+        "  <NavigationMenuList>",
+        "    <NavigationMenuItem>",
+        "      <NavigationMenuTrigger>Item One</NavigationMenuTrigger>",
+        "      <NavigationMenuContent>",
+        "        <NavigationMenuLink>Link</NavigationMenuLink>",
+        "      </NavigationMenuContent>",
+        "    </NavigationMenuItem>",
+        "  </NavigationMenuList>",
+        "</NavigationMenu>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/navigation-menu.html"
+    },
+
+    "Pagination": {
+        "prefix": ["shadcn-x-pagination", "cnx-pagination"],
+        "body": [
+            " <Pagination v-slot=\"{ page }\" :total=\"100\" :sibling-count=\"1\" show-edges :default-page=\"2\">",
+            "    <PaginationList v-slot=\"{ items }\" class=\"flex items-center gap-1\">",
+            "      <PaginationFirst />",
+            "      <PaginationPrev />",
+            "",
+            "      <template v-for=\"(item, index) in items\">",
+            "        <PaginationListItem v-if=\"item.type === 'page'\" :key=\"index\" :value=\"item.value\" as-child>",
+            "          <Button class=\"w-10 h-10 p-0\" :variant=\"item.value === page ? 'default' : 'outline'\">",
+            "            {{ item.value }}",
+            "          </Button>",
+            "        </PaginationListItem>",
+            "        <PaginationEllipsis v-else :key=\"item.type\" :index=\"index\" />",
+            "      </template>",
+            "",
+            "      <PaginationNext />",
+            "      <PaginationLast />",
+            "    </PaginationList>",
+            "  </Pagination>"
+          ],
+        "description": "https://shadcn-vue.com/docs/components/pagination.html"
+    },
+  
+    "Popover": {
+      "prefix": ["shadcn-x-popover", "cnx-popover"],
+      "body": [
+        "<Popover>",
+        "  <PopoverTrigger>Open</PopoverTrigger>",
+        "  <PopoverContent>Place content for the popover here.</PopoverContent>",
+        "</Popover>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/popover.html"
+    },
+  
+    "Progress": {
+      "prefix": ["shadcn-x-progress", "cnx-progress"],
+      "body": ["<Progress v-model=\"progress\" class=\"w-[60%]\" />", ""],
+      "description": "https://shadcn-vue.com/docs/components/progress.html"
+    },
+  
+    "Radio Group": {
+      "prefix": "shadcn-x-radio-group",
+      "body": [
+        " <RadioGroup default-value=\"comfortable\">",
+        "    <div class=\"flex items-center space-x-2\">",
+        "      <RadioGroupItem id=\"r1\" value=\"default\" />",
+        "      <Label for=\"r1\">Default</Label>",
+        "    </div>",
+        "    <div class=\"flex items-center space-x-2\">",
+        "      <RadioGroupItem id=\"r2\" value=\"comfortable\" />",
+        "      <Label for=\"r2\">Comfortable</Label>",
+        "    </div>",
+        "    <div class=\"flex items-center space-x-2\">",
+        "      <RadioGroupItem id=\"r3\" value=\"compact\" />",
+        "      <Label for=\"r3\">Compact</Label>",
+        "    </div>",
+        "  </RadioGroup>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/radio-group.html"
+    },
+  
+    "Scroll Area": {
+      "prefix": ["shadcn-x-scroll-area", "cnx-scroll-area"],
+      "body": [
+        "<ScrollArea class=\"h-[200px] w-[350px] rounded-md border p-4\">",
+        "  Jokester began sneaking into the castle in the middle of the night and leaving",
+        "  jokes all over the place: under the king's pillow, in his soup, even in the",
+        "  royal toilet. The king was furious, but he couldn't seem to stop Jokester. And",
+        "  then, one day, the people of the kingdom discovered that the jokes left by",
+        "  Jokester were so funny that they couldn't help but laugh. And once they",
+        "  started laughing, they couldn't stop.",
+        "</ScrollArea>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/scroll-area.html"
+    },
+  
+    "Select": {
+      "prefix": ["cnx-select", "shadcn-x-select"],
+      "body": [
+        "  <Select>",
+        "    <SelectTrigger>",
+        "      <SelectValue placeholder=\"Select a fruit\" />",
+        "    </SelectTrigger>",
+        "    <SelectContent>",
+        "      <SelectGroup>",
+        "        <SelectLabel>Fruits</SelectLabel>",
+        "        <SelectItem value=\"apple\">",
+        "          Apple",
+        "        </SelectItem>",
+        "      </SelectGroup>",
+        "    </SelectContent>",
+        "  </Select>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/select.html"
+    },
+  
+    "Separator": {
+      "prefix": ["shadcn-x-separator", "cnx-separator"],
+      "body": ["<Separator />", ""],
+      "description": "https://shadcn-vue.com/docs/components/separator.html"
+    },
+  
+    "Sheet": {
+      "prefix": ["shadcn-x-sheet", "cnx-sheet"],
+      "body": [
+        "  <Sheet>",
+        "    <SheetTrigger>Open</SheetTrigger>",
+        "    <SheetContent>",
+        "      <SheetHeader>",
+        "        <SheetTitle>Are you sure absolutely sure?</SheetTitle>",
+        "        <SheetDescription>",
+        "          This action cannot be undone. This will permanently delete your account",
+        "          and remove your data from our servers.",
+        "        </SheetDescription>",
+        "      </SheetHeader>",
+        "    </SheetContent>",
+        "  </Sheet>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/sheet.html"
+    },
+  
+    "Skeleton": {
+      "prefix": ["shadcn-x-skeleton", "cnx-skeleton"],
+      "body": [
+        " <div class=\"flex items-center space-x-4\">",
+        "    <Skeleton class=\"h-12 w-12 rounded-full\" />",
+        "    <div class=\"space-y-2\">",
+        "      <Skeleton class=\"h-4 w-[250px]\" />",
+        "      <Skeleton class=\"h-4 w-[200px]\" />",
+        "    </div>",
+        "  </div>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/skeleton.html"
+    },
+  
+    "Slider": {
+      "prefix": ["shadcn-x-slider", "cnx-slider"],
+      "body": [
+        "  <Slider",
+        "    v-model=\"modelValue\"",
+        "    :max=\"100\"",
+        "    :step=\"1\"",
+        "    :class=\"cn('w-[60%]', $attrs.class ?? '')\"",
+        "  />"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/slider.html"
+    },
+  
+    "Switch": {
+      "prefix": ["shadcn-x-switch", "cnx-switch"],
+      "body": ["<Switch />", ""],
+      "description": "https://shadcn-vue.com/docs/components/switch.html"
+    },
+  
+    "Table": {
+      "prefix": ["shadcn-x-table", "cnx-table"],
+      "body": [
+        "  <Table>",
+        "    <TableCaption>A list of your recent invoices.</TableCaption>",
+        "    <TableHeader>",
+        "      <TableRow>",
+        "        <TableHead class=\"w-[100px]\">",
+        "          Invoice",
+        "        </TableHead>",
+        "        <TableHead>Status</TableHead>",
+        "        <TableHead>Method</TableHead>",
+        "        <TableHead class=\"text-right\">",
+        "          Amount",
+        "        </TableHead>",
+        "      </TableRow>",
+        "    </TableHeader>",
+        "    <TableBody>",
+        "      <TableRow>",
+        "        <TableCell class=\"font-medium\">",
+        "          INV001",
+        "        </TableCell>",
+        "        <TableCell>Paid</TableCell>",
+        "        <TableCell>Credit Card</TableCell>",
+        "        <TableCell class=\"text-right\">",
+        "          $250.00",
+        "        </TableCell>",
+        "      </TableRow>",
+        "    </TableBody>",
+        "  </Table>"
+      ],    
+      "description": "https://shadcn-vue.com/docs/components/table.html"
+    },
+  
+    "Tabs": {
+      "prefix": ["shadcn-x-tabs", "cnx-tabs"],
+      "body": [
+        "  <Tabs default-value=\"account\" class=\"w-[400px]\">",
+        "    <TabsList>",
+        "      <TabsTrigger value=\"account\">",
+        "        Account",
+        "      </TabsTrigger>",
+        "      <TabsTrigger value=\"password\">",
+        "        Password",
+        "      </TabsTrigger>",
+        "    </TabsList>",
+        "    <TabsContent value=\"account\">",
+        "      Make changes to your account here.",
+        "    </TabsContent>",
+        "    <TabsContent value=\"password\">",
+        "      Change your password here.",
+        "    </TabsContent>",
+        "  </Tabs>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/tabs.html"
+    },
+  
+    "Textarea": {
+      "prefix": ["shadcn-x-textarea", "cnx-textarea"],
+      "body": ["<Textarea />", ""],
+      "description": "https://shadcn-vue.com/docs/components/textarea.html"
+    },
+
+    "Toast": {
+        "prefix": ["shadcn-x-toast", "cnx-toast"],
+        "body": [
+            "  <Button",
+            "    @click=\"() => {",
+            "      toast({",
+            "        title: 'Scheduled: Catch up',",
+            "        description: 'Friday, February 10, 2023 at 5:57 PM',",
+            "      });",
+            "    }\"",
+            "  >",
+            "    Add to calander",
+            "  </Button>"
+        ],
+        "description": "https://shadcn-vue.com/docs/components/toast.html"
+    },
+  
+    "Toggle": {
+      "prefix": ["shadcn-x-toggle", "cnx-toggle"],
+      "body": ["<Toggle>Toggle</Toggle>", ""],
+      "description": "https://shadcn-vue.com/docs/components/toggle.html"
+    },
+  
+    "Tooltip": {
+      "prefix": ["shadcn-x-tooltip", "cnx-tooltip"],
+      "body": [
+        "<TooltipProvider>",
+        "  <Tooltip>",
+        "    <TooltipTrigger as-child>Hover</TooltipTrigger>",
+        "    <TooltipContent>",
+        "      <p>Add to library</p>",
+        "    </TooltipContent>",
+        "  </Tooltip>",
+        "</TooltipProvider>",
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/tooltip.html"
+    }
+  }
+  
