@@ -20,6 +20,12 @@ This VSCode extension enables you to install [shadcn/vue](https://shadcn-vue.com
 
 ![choose a component to install from the list](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/add-new-components.png)
 
+## Install multiple components
+![install multiple components](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/add-multiple-components.png)
+
+## Choose components to install from the list
+![choose components to install from the list](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/add-multiple-components-preview.png)
+
 
 ## Open the Shadcn-Vue documentation
 
