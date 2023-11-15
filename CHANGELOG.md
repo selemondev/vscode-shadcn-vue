@@ -4,6 +4,26 @@ All notable changes to the "shadcn-vue" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v0.0.4
+
+[compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.2...v0.0.4)
+
+### 🚀 Enhancements
+
+- Add issue templates ([cf6fc5c](https://github.com/selemondev/vscode-shadcn-vue/commit/cf6fc5c))
+- Add multiple components ([76bfa7b](https://github.com/selemondev/vscode-shadcn-vue/commit/76bfa7b))
+
+### 🏡 Chore
+
+- **release:** V0.0.2 ([c66297b](https://github.com/selemondev/vscode-shadcn-vue/commit/c66297b))
+- Add codeowners ([982e047](https://github.com/selemondev/vscode-shadcn-vue/commit/982e047))
+- Remove console logs ([404399c](https://github.com/selemondev/vscode-shadcn-vue/commit/404399c))
+- Bumpp version ([c910cb6](https://github.com/selemondev/vscode-shadcn-vue/commit/c910cb6))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.2
 
 
