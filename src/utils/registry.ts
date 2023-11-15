@@ -60,6 +60,20 @@ export const getInstallCmd = async (components: string[]) => {
   return `npx shadcn-vue@latest add ${componentStr}`;
 };
 
+export const getInstallMultipleComponents = async (component: string) => {
+  const packageManager = await detectPackageManager();
+
+  if (packageManager === "bun") {
+    return `bunx shadcn-vue add ${component}`;
+  }
+
+  if (packageManager === "pnpm") {
+    return `pnpm dlx shadcn-vue@latest add ${component}`;
+  }
+
+  return `npx shadcn-vue@latest add ${component}`;
+};
+
 export const getInitCmd = async () => {
   const packageManager = await detectPackageManager();
 
