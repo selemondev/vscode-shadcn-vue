@@ -6,6 +6,22 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## v0.0.4
 
+[compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.4...v0.0.4)
+
+### 📖 Documentation
+
+- Update README file ([ed975af](https://github.com/selemondev/vscode-shadcn-vue/commit/ed975af))
+
+### 🏡 Chore
+
+- Release v0.0.3 ([acabf7d](https://github.com/selemondev/vscode-shadcn-vue/commit/acabf7d))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
+## v0.0.4
+
 [compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.2...v0.0.4)
 
 ### 🚀 Enhancements
