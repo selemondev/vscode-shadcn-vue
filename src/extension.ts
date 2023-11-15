@@ -3,6 +3,7 @@ import * as vscode from "vscode";
 import {
   getInitCmd,
   getInstallCmd,
+  getInstallMultipleComponents,
   getComponentDocLink,
   getRegistry,
   shadCnDocUrl,
@@ -14,6 +15,7 @@ import type { Components } from "./utils/registry";
 const commands = {
   initCli: "shadcn-vue.initCli",
   addNewComponent: "shadcn-vue.addNewComponent",
+  addMultipleComponents: "shadcn-vue.addMultipleComponents",
   gotoComponentDoc: "shadcn-vue.gotoComponentDoc",
   reloadComponentList: "shadcn-vue.reloadComponentList",
   gotoDoc: "shadcn-vue.gotoDoc",
@@ -50,6 +52,35 @@ export function activate(context: vscode.ExtensionContext) {
       }
 
       const installCmd = await getInstallCmd([selectedComponent.label]);
+      executeCommand(installCmd);
+
+      await logCmd(installCmd);
+    }),
+
+    vscode.commands.registerCommand(commands.addMultipleComponents, async () => {
+      if (!registryData) {
+        const newRegistryData = await getRegistry();
+
+        if (!newRegistryData) {
+          vscode.window.showErrorMessage("Can not get the component list");
+          return;
+        }
+
+        registryData = newRegistryData;
+      }
+
+      const selectedComponents = await vscode.window.showQuickPick(registryData, {
+        matchOnDescription: true,
+        canPickMany: true
+      });
+
+      if (!selectedComponents) {
+        return;
+      }
+
+      const selectedComponent = selectedComponents.map((component) => component.label);
+
+      const installCmd = await getInstallMultipleComponents(selectedComponent.join(' '));
       executeCommand(installCmd);
 
       await logCmd(installCmd);

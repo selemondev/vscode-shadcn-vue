@@ -66,6 +66,10 @@
         "title": "shadcn/vue: Add New Component"
       },
       {
+        "command": "shadcn-vue.addMultipleComponents",
+        "title": "shadcn/vue: Add Multiple Components"
+      },
+      {
         "command": "shadcn-vue.gotoComponentDoc",
         "title": "shadcn/vue: Open Component Documentation"
       },

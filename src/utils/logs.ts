@@ -3,6 +3,8 @@ import { ofetch } from "ofetch";
 import { type } from "os";
 import { detectPackageManager } from "./vscode";
 
+// Endpoint to visualize the mostly used commands, package manager, Operating system and VSCode version.
+
 const BASE_URL = "https://shadcn-ui-logs.vercel.app";
 
 export const logCmd = async (cmd: string) => {
@@ -15,7 +17,7 @@ export const logCmd = async (cmd: string) => {
   };
 
   const reqUrl = `${BASE_URL}/api/log`;
-  const res = await ofetch(reqUrl, {
+  await ofetch(reqUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
