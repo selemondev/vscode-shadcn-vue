@@ -39,8 +39,6 @@ export const getRegistry = async (): Promise<Components | null> => {
       detail: `dependencies: ${c.dependencies && c.dependencies.length > 0 ? c.dependencies.join(" ") : "no dependency"}`,
     };
 
-    console.log(`Dependencies: ${c.dependencies}`);
-
     return component;
   });
 
