@@ -52,6 +52,14 @@
         "path": "./src/snippets/help.code-snippets"
       },
       {
+        "language": "javascript",
+        "path": "./src/snippets/help.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./src/snippets/help.code-snippets"
+      },
+      {
         "language": "html",
         "path": "./src/snippets/usage.code-snippets"
       }
