@@ -5,7 +5,7 @@ import { detectPackageManager } from "./vscode";
 
 // Endpoint to visualize the mostly used commands, package manager, Operating system and VSCode version.
 
-const BASE_URL = "https://shadcn-ui-logs.vercel.app";
+const BASE_URL = "<API-URL>";
 
 export const logCmd = async (cmd: string) => {
   const packageManager = await detectPackageManager();
