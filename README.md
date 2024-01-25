@@ -7,32 +7,32 @@
 
 This VSCode extension enables you to install [shadcn/vue](https://shadcn-vue.com) components directly from your IDE ✨.
 
-## Initialize the Shadcn/Vue CLI
+## Initialize the Shadcn/Vue CLI.
 
 ![to initialize CLI open the command palette and search for shadcn/vue: install cli command](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/init-cli.png)
 
-## Install components
+## Install components.
 
 ![to initialize CLI open the command palette and search for shadcn/vue: add new component](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/add-new-component.png)
 
 
-## Choose a component to install from the list
+## Choose a component to install from the list.
 
 ![choose a component to install from the list](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/add-new-components.png)
 
-## Install multiple components
+## Install multiple components.
 ![install multiple components](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/add-multiple-components.png)
 
-## Choose components to install from the list
+## Choose components to install from the list.
 ![choose components to install from the list](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/add-multiple-components-preview.png)
 
 
-## Open the Shadcn-Vue documentation
+## Open the Shadcn-Vue documentation.
 
 ![open the shadcn-vue documentation](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/shadcn-vue-docs.png)
 
 
-## Navigate to a particular component's documentation page
+## Navigate to a particular component's documentation page.
 
 ![navigate to a particular component's documentation page](https://raw.githubusercontent.com/selemondev/vscode-shadcn-vue/master/src/assets/images/shadcn-vue-component-docs.png)
 
