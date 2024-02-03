@@ -334,6 +334,14 @@
       "body": ["import { Slider } from \"@/components/ui/slider\"", "import { cn } from \"@/lib/utils\"", ""],
       "description": "https://shadcn-vue.com/docs/components/slider.html"
     },
+
+    "Sonner": {
+      "prefix": ["shadcn-i-sonner", "cni-sonner"],
+      "body": [
+        "import { Toaster } from \"@/components/ui/sonner\""
+      ],
+      "description": "https://www.shadcn-vue.com/docs/components/sonner.html"
+    },
   
     "Switch": {
       "prefix": ["shadcn-i-switch", "cni-switch"],

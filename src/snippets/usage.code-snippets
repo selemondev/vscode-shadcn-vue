@@ -482,6 +482,14 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/slider.html"
     },
+
+    "Sonner": {
+      "prefix": ["shadcn-x-sonner", "cnx-sonner"],
+      "body": [
+        "<Toaster />"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/sonner.html"
+    },
   
     "Switch": {
       "prefix": ["shadcn-x-switch", "cnx-switch"],
