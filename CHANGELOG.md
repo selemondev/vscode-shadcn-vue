@@ -4,6 +4,36 @@ All notable changes to the "shadcn-vue" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v0.0.6
+
+[compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.5...v0.0.6)
+
+### 🚀 Enhancements
+
+- **snippets:** Add Sonner snippets ([5711055](https://github.com/selemondev/vscode-shadcn-vue/commit/5711055))
+- **snippets:** Add Carousel snippets ([0eb3f8b](https://github.com/selemondev/vscode-shadcn-vue/commit/0eb3f8b))
+
+### 💅 Refactors
+
+- Use getInstallCmd function ([f1e4f58](https://github.com/selemondev/vscode-shadcn-vue/commit/f1e4f58))
+- **bundler:** Migrate from webpack to tsup ([e086953](https://github.com/selemondev/vscode-shadcn-vue/commit/e086953))
+
+### 📖 Documentation
+
+- Update README.md ([db25930](https://github.com/selemondev/vscode-shadcn-vue/commit/db25930))
+
+### 🏡 Chore
+
+- **release:** V0.0.4 ([634aab6](https://github.com/selemondev/vscode-shadcn-vue/commit/634aab6))
+- **release:** V0.0.5 ([727bf3d](https://github.com/selemondev/vscode-shadcn-vue/commit/727bf3d))
+- Use help-code snippets in script block ([7d8faa8](https://github.com/selemondev/vscode-shadcn-vue/commit/7d8faa8))
+- Use getInstallCmd function ([4dd7a07](https://github.com/selemondev/vscode-shadcn-vue/commit/4dd7a07))
+- . ([1a4a27a](https://github.com/selemondev/vscode-shadcn-vue/commit/1a4a27a))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.5
 
 [compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.4...v0.0.5)
