@@ -159,6 +159,56 @@
       ],    
       "description": "https://shadcn-vue.com/docs/components/card.html"
     },
+
+    "Carousel": {
+      "prefix": ["shadcn-x-carousel", "cnx-carousel"],
+      "body": [
+        "  <Carousel class=\"relative w-full max-w-xs\">",
+        "    <CarouselContent>",
+        "      <CarouselItem v-for=\"(_, index) in 5\" :key=\"index\">",
+        "        <div class=\"p-1\">",
+        "          <Card>",
+        "            <CardContent class=\"flex aspect-square items-center justify-center p-6\">",
+        "              <span class=\"text-4xl font-semibold\">{{ index + 1 }}</span>",
+        "            </CardContent>",
+        "          </Card>",
+        "        </div>",
+        "      </CarouselItem>",
+        "    </CarouselContent>",
+        "    <CarouselPrevious />",
+        "    <CarouselNext />",
+        "  </Carousel>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/carousel.html"
+    },
+
+    "Carousel-Vertical": {
+      "prefix": ["shadcn-x-carousel-vertical", "cnx-carousel-vertical"],
+      "body": [
+        " <Carousel",
+        "    orientation=\"vertical\"",
+        "    class=\"relative w-full max-w-xsw-full max-w-xs\"",
+        "    :opts=\"{",
+        "      align: 'start',",
+        "    }\"",
+        "  >",
+        "    <CarouselContent class=\"-mt-1 h-[200px]\">",
+        "      <CarouselItem v-for=\"(_, index) in 5\" :key=\"index\" class=\"p-1 md:basis-1/2\">",
+        "        <div class=\"p-1\">",
+        "          <Card>",
+        "            <CardContent class=\"flex items-center justify-center p-6\">",
+        "              <span class=\"text-3xl font-semibold\">{{ index + 1 }}</span>",
+        "            </CardContent>",
+        "          </Card>",
+        "        </div>",
+        "      </CarouselItem>",
+        "    </CarouselContent>",
+        "    <CarouselPrevious />",
+        "    <CarouselNext />",
+        "  </Carousel>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/carousel.html"
+    },
   
     "Checkbox": {
       "prefix": ["shadcn-x-checkbox", "cnx-checkbox"],
