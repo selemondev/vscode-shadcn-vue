@@ -76,6 +76,10 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 ### How to contribute?
 
+Contributions are welcome and encouraged! If you have any ideas or suggestions for new features, or if you encounter any bugs or issues, please open an issue or submit a pull request on the GitHub repository. 
+
+Developers interested in contributing should read the [Code of Conduct](./CODE_OF_CONDUCT.md) and the [Contributing Guide](./CONTRIBUTING.md).
+
 Use this link - [Snippet Generation](https://snippet-generator.app/?description=https://shadcn-vue.com/docs/components&tabtrigger=shadcn-&snippet=%22https://shadcn-vue.com/docs/components%22:+%7B%0A++%22prefix%22:+%22shadcn-%22,%0A++%22body%22:+%5B%0A++%5D,%0A++%22description%22:+%22https://shadcn-vue.com/docs/components%22%0A%7D&mode=vscode) to generate snippets and add/update them to the `snippets` folder that is located in the `src` accordingly.
 
 
