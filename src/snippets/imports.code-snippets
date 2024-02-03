@@ -95,6 +95,15 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/card.html"
     },
+
+    "Carousel": {
+      "prefix": ["shadcn-i-carousel", "cni-carousel"],
+      "body": [
+        "import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'",
+        "import { Card, CardContent } from '@/components/ui/card'"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/carousel.html"
+    },
   
     "Checkbox": {
       "prefix": ["shadcn-i-checkbox", "cni-checkbox"],
