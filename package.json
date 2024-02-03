@@ -1,6 +1,6 @@
 {
   "name": "shadcn-vue",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "displayName": "shadcn/vue",
   "description": "Integrate components and snippets from Shadcn/Vue directly into your IDE.",
   "publisher": "Selemondev",
@@ -92,7 +92,7 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run package",
+    "vscode:prepublish": "pnpm run build",
     "build": "tsup",
     "deploy": "vsce publish --no-dependencies",
     "pretest": "pnpm run compile && yarn run lint",
