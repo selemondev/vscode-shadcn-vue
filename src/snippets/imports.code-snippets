@@ -160,6 +160,24 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/dialog.html"
     },
+
+    "Drawer": {
+      "prefix": ["shadcn-i-drawer", "cni-drawer"],
+      "body": [
+        "import {",
+        "  Drawer,",
+        "  DrawerClose,",
+        "  DrawerContent,",
+        "  DrawerDescription,",
+        "  DrawerFooter,",
+        "  DrawerHeader,",
+        "  DrawerTitle,",
+        "  DrawerTrigger,",
+        "} from '@/components/ui/drawer'"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/drawer.html"
+    },
+
   
     "Dropdown Menu": {
       "prefix": ["shadcn-i-dropdown-menu", "cni-dropdown-menu"],
@@ -259,6 +277,18 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/pagination.html"
     },
+
+    "Pin Input": {
+      "prefix": ["shadcn-i-pin-input", "cni-i-input"],
+      "body": [
+        "import {",
+        "  PinInput,",
+        "  PinInputInput,",
+        "} from '@/components/ui/pin-input'"
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/pin-input.html"
+    },
   
     "Popover": {
       "prefix": ["shadcn-i-popover", "cni-popover"],
@@ -287,6 +317,18 @@
         ""
       ],
       "description": "https://shadcn-vue.com/docs/components/radio-group.html"
+    },
+
+    "Resizable": {
+      "prefix": ["shadcn-i-resizable", "cni-resizable"],
+      "body": [
+        "import {",
+        "  ResizableHandle,",
+        "  ResizablePanel,",
+        "  ResizablePanelGroup,",
+        "} from '@/components/ui/resizable'"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/resizable.html"
     },
   
     "Scroll Area": {
@@ -382,6 +424,15 @@
         ""
       ],
       "description": "https://shadcn-vue.com/docs/components/tabs.html"
+    },
+
+    "Tags Input": {
+      "prefix": ["shadcn-i-tags-input", "cni-tags-input"],
+      "body": [
+        "import { TagsInput, TagsInputInput, TagsInputItem, TagsInputItemDelete, TagsInputItemText } from '@/components/ui/tags-input'"
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/tags-input.html"
     },
   
     "Textarea": {

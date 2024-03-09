@@ -294,6 +294,30 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/dialog.html"
     },
+
+    "Drawer": {
+      "prefix": ["shadcn-x-drawer", "cnx-drawer"],
+      "body": [
+        "  <Drawer>",
+        "    <DrawerTrigger>Open</DrawerTrigger>",
+        "    <DrawerContent>",
+        "      <DrawerHeader>",
+        "        <DrawerTitle>Are you absolutely sure?</DrawerTitle>",
+        "        <DrawerDescription>This action cannot be undone.</DrawerDescription>",
+        "      </DrawerHeader>",
+        "      <DrawerFooter>",
+        "        <Button>Submit</Button>",
+        "        <DrawerClose>",
+        "          <Button variant=\"outline\">",
+        "            Cancel",
+        "          </Button>",
+        "        </DrawerClose>",
+        "      </DrawerFooter>",
+        "    </DrawerContent>",
+        "  </Drawer>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/drawer.html"
+    },
   
     "Dropdown Menu": {
       "prefix": ["shadcn-x-dropdown-menu", "cnx-dropdown-menu"],
@@ -405,6 +429,26 @@
           ],
         "description": "https://shadcn-vue.com/docs/components/pagination.html"
     },
+
+    "Pin Input": {
+      "prefix": ["shadcn-x-pin-input", "cnx-pin-input"],
+      "body": [
+        "    <PinInput",
+        "            id=\"pin-input\"",
+        "            placeholder=\"○\"",
+        "            class=\"flex gap-2 items-center mt-1\"",
+        "            otp",
+        "            type=\"number\"",
+        "          >",
+        "            <PinInputInput",
+        "              v-for=\"(id, index) in 5\"",
+        "              :key=\"id\"",
+        "              :index=\"index\"",
+        "            />",
+        "          </PinInput>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/pin-input.html"
+    },
   
     "Popover": {
       "prefix": ["shadcn-x-popover", "cnx-popover"],
@@ -425,7 +469,7 @@
     },
   
     "Radio Group": {
-      "prefix": "shadcn-x-radio-group",
+      "prefix": ["shadcn-x-radio-group", "cnx-radio-group"],
       "body": [
         " <RadioGroup default-value=\"comfortable\">",
         "    <div class=\"flex items-center space-x-2\">",
@@ -443,6 +487,19 @@
         "  </RadioGroup>"
       ],
       "description": "https://shadcn-vue.com/docs/components/radio-group.html"
+    },
+
+
+    "Resizable": {
+      "prefix": ["shadcn-x-resizable", "cnx-resizable"],
+      "body": [
+        " <ResizablePanelGroup direction=\"horizontal\">",
+        "    <ResizablePanel>One</ResizablePanel>",
+        "    <ResizableHandle />",
+        "    <ResizablePanel>Two</ResizablePanel>",
+        "  </ResizablePanelGroup>"
+      ],
+      "description": "https://shadcn-vue.com/docs/components/resizable.html"
     },
   
     "Scroll Area": {
@@ -602,6 +659,22 @@
         "  </Tabs>"
       ],
       "description": "https://shadcn-vue.com/docs/components/tabs.html"
+    },
+
+    "Tags Input": {
+      "prefix": ["shadcn-x-tags-input", "cnx-tags-input"],
+      "body": [
+        "  <TagsInput v-model=\"\">",
+        "    <TagsInputItem v-for=\"item in modelValue\" :key=\"item\" :value=\"item\">",
+        "      <TagsInputItemText />",
+        "      <TagsInputItemDelete />",
+        "    </TagsInputItem>",
+        "",
+        "    <TagsInputInput placeholder=\"Fruits...\" />",
+        "  </TagsInput>"
+        ""
+      ],
+      "description": "https://shadcn-vue.com/docs/components/tags-input.html"
     },
   
     "Textarea": {
