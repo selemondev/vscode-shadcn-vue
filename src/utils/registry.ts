@@ -20,7 +20,7 @@ export const shadCnDocUrl = "https://shadcn-vue.com/docs";
 export type Components = Component[];
 
 export const getRegistry = async (): Promise<Components | null> => {
-  const reqUrl = "https://shadcn-vue.com/registry/index.json";
+  const reqUrl = "https://www.shadcn-vue.com/r/index.json";
   const [res, err] = await to(ofetch(reqUrl));
 
   if (err || !res) {
