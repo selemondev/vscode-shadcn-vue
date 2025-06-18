@@ -33,9 +33,15 @@ export const getFileStat = async (fileName: string) => {
 };
 
 export const detectPackageManager = async (): Promise<PackageManager> => {
-  const bunLockExists = await getFileStat("bun.lockb");
-  if (bunLockExists) {
-    return "bun";
+  const lockFiles = ["bun.lock", "bun.lockb"];
+  const results = await Promise.all(
+    lockFiles.map((file) =>
+      getFileStat(file).catch(err => err.code === 'ENOENT' ? false : Promise.reject(err))
+    )
+  );
+
+  if (results.some(Boolean)) {
+    return 'bun';
   }
 
   const pnpmLockExists = await getFileStat("pnpm-lock.yaml");
