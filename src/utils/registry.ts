@@ -3,7 +3,7 @@ import { to } from "./index";
 import { detectPackageManager } from "./vscode";
 
 type OgComponent = {
-  type: "components:ui";
+  type: "registry:ui";
   name: string;
   files: string[];
   dependencies?: string[];
