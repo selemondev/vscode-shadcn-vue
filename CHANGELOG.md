@@ -4,6 +4,23 @@ All notable changes to the "shadcn-vue" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v0.0.10
+
+[compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.9...v0.0.10)
+
+### 💅 Refactors
+
+- Bun-lock file ([00699b1](https://github.com/selemondev/vscode-shadcn-vue/commit/00699b1))
+
+### 🏡 Chore
+
+- Release ([4109d7b](https://github.com/selemondev/vscode-shadcn-vue/commit/4109d7b))
+- Add deployment scripts ([0cd39c9](https://github.com/selemondev/vscode-shadcn-vue/commit/0cd39c9))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+
 ## v0.0.6
 
 [compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.5...v0.0.6)
