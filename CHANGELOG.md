@@ -8,6 +8,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 [compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.10...v0.0.11)
 
+### 🏡 Chore
+
+- Add vue-html language for usage snippet ([562012d](https://github.com/selemondev/vscode-shadcn-vue/pull/37))
+
+### ❤️ Contributors
+
+- [Misbah Ansori](@misbahansori)
+
 ## v0.0.10
 
 [compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.9...v0.0.10)
