@@ -4,6 +4,10 @@ All notable changes to the "shadcn-vue" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v0.0.11
+
+[compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.10...v0.0.11)
+
 ## v0.0.10
 
 [compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.9...v0.0.10)
