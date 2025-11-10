@@ -7,7 +7,7 @@ import {
   getRegistry,
   shadCnDocUrl,
 } from "./utils/registry";
-import { executeCommand } from "./utils/vscode";
+import { executeCommand, getOrChooseCwd } from "./utils/vscode";
 import type { Components, Component } from "./utils/registry";
 
 const commands = {
@@ -24,7 +24,8 @@ export function activate(context: vscode.ExtensionContext) {
 
   const disposables: vscode.Disposable[] = [
     vscode.commands.registerCommand(commands.initCli, async () => {
-      const intCmd = await getInitCmd();
+      const cwd = await getOrChooseCwd();
+      const intCmd = await getInitCmd(cwd);
       executeCommand(intCmd);
     }),
     vscode.commands.registerCommand(commands.addNewComponent, async () => {
@@ -46,8 +47,8 @@ export function activate(context: vscode.ExtensionContext) {
       if (!selectedComponent) {
         return;
       }
-
-      const installCmd = await getInstallCmd([selectedComponent.label]);
+      const cwd = await getOrChooseCwd();
+      const installCmd = await getInstallCmd([selectedComponent.label], cwd);
       executeCommand(installCmd);
     }),
 
@@ -73,8 +74,8 @@ export function activate(context: vscode.ExtensionContext) {
       }
 
       const selectedComponent = selectedComponents.map((component: Component) => component.label);
-
-      const installCmd = await getInstallCmd(selectedComponent);
+      const cwd = await getOrChooseCwd();
+      const installCmd = await getInstallCmd(selectedComponent, cwd);
       executeCommand(installCmd);
     }),
     vscode.commands.registerCommand(commands.gotoComponentDoc, async () => {
@@ -120,4 +121,4 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 // This method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() { }

@@ -56,3 +56,42 @@ export const detectPackageManager = async (): Promise<PackageManager> => {
 
   return "npm";
 };
+
+
+export const getOrChooseCwd = async (): Promise<string> => {
+  let cwd = "";
+  const prefix = "${workspaceFolder}/";
+
+  const workspaceFolders = (vscode.workspace.workspaceFolders ?? []).filter(
+    (f) => f.uri.scheme === "file"
+  );
+
+  if (!workspaceFolders.length) { return "./"; }
+
+  const workspacePath = workspaceFolders[0]?.uri.fsPath ?? "";
+  const cwdFromConfig = vscode.workspace
+    .getConfiguration()
+    .get<string>("terminal.integrated.cwd")
+    ?.trim();
+
+  if (cwdFromConfig) {
+    if (cwdFromConfig.startsWith(prefix)) {
+      cwd = cwdFromConfig.slice(prefix.length);
+    }
+    else if (cwdFromConfig.startsWith(workspacePath)) {
+      cwd = cwdFromConfig.replace(new RegExp(`^${workspacePath}/?`), "");
+    } else {
+      cwd = cwdFromConfig;
+    }
+
+    return `${workspacePath}/${cwd}`;
+  }
+
+  const choice = await vscode.window.showQuickPick(
+    workspaceFolders.map((f) => f.name)
+  );
+
+  if (!choice) { return "./"; }
+
+  return workspaceFolders.find((f) => f.name === choice)?.uri.fsPath ?? "./";
+};
