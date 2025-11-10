@@ -4,6 +4,32 @@ All notable changes to the "shadcn-vue" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v0.1.0
+
+[compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.11...v0.1.0)
+
+### 🩹 Fixes
+
+- User's cwd preference ([73d5b84](https://github.com/selemondev/vscode-shadcn-vue/commit/73d5b84))
+
+### 🏡 Chore
+
+- Set npm as the package ecosystem for Dependabot ([c256cb9](https://github.com/selemondev/vscode-shadcn-vue/commit/c256cb9))
+- **deps-dev:** Bump tsup from 8.0.1 to 8.5.0 ([17deab4](https://github.com/selemondev/vscode-shadcn-vue/commit/17deab4))
+- **deps-dev:** Bump @types/vscode from 1.86.0 to 1.103.0 ([246dec3](https://github.com/selemondev/vscode-shadcn-vue/commit/246dec3))
+- **deps-dev:** Bump @types/node from 20.2.5 to 24.3.1 ([82b4682](https://github.com/selemondev/vscode-shadcn-vue/commit/82b4682))
+- **deps-dev:** Bump typescript from 5.3.3 to 5.9.2 ([4ecfe75](https://github.com/selemondev/vscode-shadcn-vue/commit/4ecfe75))
+- **deps-dev:** Bump @types/node from 24.3.1 to 24.5.2 ([c01670e](https://github.com/selemondev/vscode-shadcn-vue/commit/c01670e))
+- **deps-dev:** Bump @types/node from 24.5.2 to 24.6.0 ([c6289ea](https://github.com/selemondev/vscode-shadcn-vue/commit/c6289ea))
+- **package.json:** Update dependencies ([22ffb67](https://github.com/selemondev/vscode-shadcn-vue/commit/22ffb67))
+- **eslint:** Migrate to Eslint v9 file structure ([47545ca](https://github.com/selemondev/vscode-shadcn-vue/commit/47545ca))
+- Update settings.json ([4d8dbb2](https://github.com/selemondev/vscode-shadcn-vue/commit/4d8dbb2))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev19@gmail.com>
+- Selemon Brahanu ([@selemondev](https://github.com/selemondev))
+
 ## v0.0.11
 
 [compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.0.10...v0.0.11)
