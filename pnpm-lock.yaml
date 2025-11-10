@@ -19,13 +19,10 @@ importers:
         specifier: ^1.85.0
         version: 1.103.0
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.46.3
+        specifier: ^8.43.0
         version: 8.46.3(@typescript-eslint/parser@8.46.3(eslint@9.39.1)(typescript@5.9.3))(eslint@9.39.1)(typescript@5.9.3)
       '@typescript-eslint/parser':
-        specifier: ^8.46.3
-        version: 8.46.3(eslint@9.39.1)(typescript@5.9.3)
-      '@typescript-eslint/type-utils':
-        specifier: ^8.46.3
+        specifier: ^8.45.0
         version: 8.46.3(eslint@9.39.1)(typescript@5.9.3)
       eslint:
         specifier: ^9.39.1
