@@ -1,120 +1,120 @@
 {
-  "name": "shadcn-vue",
-  "version": "0.1.0",
-  "displayName": "shadcn/vue",
-  "description": "Integrate components and snippets from Shadcn/Vue directly into your IDE.",
-  "publisher": "Selemondev",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/selemondev/vscode-shadcn-vue"
-  },
-  "bugs": {
-    "url": "https://github.com/selemondev/vscode-shadcn-vue/issues",
-    "email": "selemonsrdev@gmail.com"
-  },
-  "engines": {
-    "vscode": "^1.120.0"
-  },
-  "categories": [
-    "Other",
-    "Snippets"
-  ],
-  "keywords": [
-    "vue3",
-    "shadcn-vue",
-    "shadcn-vue-snippet",
-    "shadcn-vue-snippets",
-    "snippet",
-    "snippets",
-    "vue snippets",
-    "shadcn-vue snippets",
-    "vue 3 typescript snippets"
-  ],
-  "icon": "src/images/icon.png",
-  "galleryBanner": {
-    "color": "#C80000",
-    "theme": "dark"
-  },
-  "activationEvents": [],
-  "main": "./dist/extension.js",
-  "contributes": {
-    "snippets": [
-      {
-        "language": "javascript",
-        "path": "./src/snippets/imports.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./src/snippets/imports.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./src/snippets/help.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./src/snippets/help.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./src/snippets/help.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./src/snippets/usage.code-snippets"
-      },
-      {
-        "language": "vue-html",
-        "path": "./src/snippets/usage.code-snippets"
-      }
-    ],
-    "commands": [
-      {
-        "command": "shadcn-vue.initCli",
-        "title": "shadcn/vue: Install CLI"
-      },
-      {
-        "command": "shadcn-vue.addNewComponent",
-        "title": "shadcn/vue: Add New Component"
-      },
-      {
-        "command": "shadcn-vue.addMultipleComponents",
-        "title": "shadcn/vue: Add Multiple Components"
-      },
-      {
-        "command": "shadcn-vue.gotoComponentDoc",
-        "title": "shadcn/vue: Open Component Documentation"
-      },
-      {
-        "command": "shadcn-vue.reloadComponentList",
-        "title": "shadcn/vue: Reload Component List"
-      },
-      {
-        "command": "shadcn-vue.gotoDoc",
-        "title": "shadcn/vue: Open Documentation"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "pnpm build",
-    "generate:release": "npx changelogen@latest --release",
-    "build": "tsup",
-    "dev": "pnpm build -- --watch",
-    "vscode": "pnpx vsce publish --no-dependencies",
-    "ovsx": "pnpx ovsx publish --no-dependencies",
-    "lint": "eslint src --ext ts"
-  },
-  "devDependencies": {
-    "@types/node": "24.6.0",
-    "@types/vscode": "^1.120.0",
-    "@typescript-eslint/eslint-plugin": "^8.61.0",
-    "@typescript-eslint/parser": "^8.61.0",
-    "eslint": "^9.39.4",
-    "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "ofetch": "^1.5.1"
-  },
-  "packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d"
+	"name": "shadcn-vue",
+	"version": "0.1.0",
+	"displayName": "shadcn/vue",
+	"description": "Integrate components and snippets from Shadcn/Vue directly into your IDE.",
+	"publisher": "Selemondev",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/selemondev/vscode-shadcn-vue"
+	},
+	"bugs": {
+		"url": "https://github.com/selemondev/vscode-shadcn-vue/issues",
+		"email": "selemondev19@gmail.com"
+	},
+	"engines": {
+		"vscode": "^1.120.0"
+	},
+	"categories": [
+		"Other",
+		"Snippets"
+	],
+	"keywords": [
+		"vue3",
+		"shadcn-vue",
+		"shadcn-vue-snippet",
+		"shadcn-vue-snippets",
+		"snippet",
+		"snippets",
+		"vue snippets",
+		"shadcn-vue snippets",
+		"vue 3 typescript snippets"
+	],
+	"icon": "src/images/icon.png",
+	"galleryBanner": {
+		"color": "#C80000",
+		"theme": "dark"
+	},
+	"activationEvents": [],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./src/snippets/imports.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./src/snippets/imports.code-snippets"
+			},
+			{
+				"language": "html",
+				"path": "./src/snippets/help.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./src/snippets/help.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./src/snippets/help.code-snippets"
+			},
+			{
+				"language": "html",
+				"path": "./src/snippets/usage.code-snippets"
+			},
+			{
+				"language": "vue-html",
+				"path": "./src/snippets/usage.code-snippets"
+			}
+		],
+		"commands": [
+			{
+				"command": "shadcn-vue.initCli",
+				"title": "shadcn/vue: Install CLI"
+			},
+			{
+				"command": "shadcn-vue.addNewComponent",
+				"title": "shadcn/vue: Add New Component"
+			},
+			{
+				"command": "shadcn-vue.addMultipleComponents",
+				"title": "shadcn/vue: Add Multiple Components"
+			},
+			{
+				"command": "shadcn-vue.gotoComponentDoc",
+				"title": "shadcn/vue: Open Component Documentation"
+			},
+			{
+				"command": "shadcn-vue.reloadComponentList",
+				"title": "shadcn/vue: Reload Component List"
+			},
+			{
+				"command": "shadcn-vue.gotoDoc",
+				"title": "shadcn/vue: Open Documentation"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "pnpm build",
+		"generate:release": "npx changelogen@latest --release",
+		"build": "tsup",
+		"dev": "pnpm build -- --watch",
+		"vscode": "pnpx vsce publish --no-dependencies",
+		"ovsx": "pnpx ovsx publish --no-dependencies",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/node": "24.6.0",
+		"@types/vscode": "^1.120.0",
+		"@typescript-eslint/eslint-plugin": "^8.61.0",
+		"@typescript-eslint/parser": "^8.61.0",
+		"eslint": "^9.39.4",
+		"tsup": "^8.5.1",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"ofetch": "^1.5.1"
+	},
+	"packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d"
 }
