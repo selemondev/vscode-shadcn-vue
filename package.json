@@ -62,10 +62,6 @@
 			{
 				"language": "html",
 				"path": "./src/snippets/usage-code-snippets.json"
-			},
-			{
-				"language": "vue-html",
-				"path": "./src/snippets/usage-code-snippets.json"
 			}
 		],
 		"commands": [
