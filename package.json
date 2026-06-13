@@ -97,7 +97,9 @@
 	},
 	"scripts": {
 		"vscode:prepublish": "pnpm build",
-		"generate:release": "npx changelogen@latest --release",
+		"generate:patch:release": "node scripts/release.mjs",
+		"generate:minor:release": "node scripts/release.mjs --minor",
+		"generate:major:release": "node scripts/release.mjs --major",
 		"build": "tsup",
 		"dev": "pnpm build -- --watch",
 		"vscode": "pnpx vsce publish --no-dependencies",
