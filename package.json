@@ -41,31 +41,31 @@
 		"snippets": [
 			{
 				"language": "javascript",
-				"path": "./src/snippets/imports.code-snippets"
+				"path": "./src/snippets/imports-code-snippets.json"
 			},
 			{
 				"language": "typescript",
-				"path": "./src/snippets/imports.code-snippets"
+				"path": "./src/snippets/imports-code-snippets.json"
 			},
 			{
 				"language": "html",
-				"path": "./src/snippets/help.code-snippets"
+				"path": "./src/snippets/help-code-snippets.json"
 			},
 			{
 				"language": "javascript",
-				"path": "./src/snippets/help.code-snippets"
+				"path": "./src/snippets/help-code-snippets.json"
 			},
 			{
 				"language": "typescript",
-				"path": "./src/snippets/help.code-snippets"
+				"path": "./src/snippets/help-code-snippets.json"
 			},
 			{
 				"language": "html",
-				"path": "./src/snippets/usage.code-snippets"
+				"path": "./src/snippets/usage-code-snippets.json"
 			},
 			{
 				"language": "vue-html",
-				"path": "./src/snippets/usage.code-snippets"
+				"path": "./src/snippets/usage-code-snippets.json"
 			}
 		],
 		"commands": [

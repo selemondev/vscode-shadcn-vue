@@ -13,7 +13,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/accordion.html"
     },
-  
+
     "Alert": {
       "prefix": ["shadcn-x-alert", "cnx-alert"],
       "body": [
@@ -26,7 +26,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/alert.html"
     },
-  
+
     "Alert Destructive": {
       "prefix": ["shadcn-x-alert-destructive", "cnx-alert-destructive"],
       "body": [
@@ -39,7 +39,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/alert.html"
     },
-  
+
     "Alert Dialog": {
       "prefix": ["shadcn-x-alert-dialog", "cnx-alert-dialog"],
       "body": [
@@ -62,7 +62,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/alert-dialog.html"
     },
-  
+
     "Aspect Ratio": {
       "prefix": ["shadcn-x-aspect-ratio", "cnx-aspect-ratio"],
       "body": [
@@ -74,7 +74,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/aspect-ratio.html"
     },
-  
+
     "Avatar": {
       "prefix": ["shadcn-x-avatar", "cnx-avatar"],
       "body": [
@@ -85,25 +85,25 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/avatar.html"
     },
-  
+
     "Badge": {
       "prefix": ["shadcn-x-badge", "cnx-badge"],
       "body": [
         "<Badge>Badge</Badge>",
-      ],    
+      ],
       "description": "https://shadcn-vue.com/docs/components/badge.html"
     },
-  
+
     "Badge Destructive": {
       "prefix": ["shadcn-x-badge-destructive", "cnx-badge-destructive"],
       "body": [
         "<Badge variant=\"destructive\">",
         "    Destructive",
         "</Badge>",
-      ],    
+      ],
       "description": "https://shadcn-vue.com/docs/components/badge.html"
     },
-  
+
     "Badge Outline": {
       "prefix": ["shadcn-x-badge-outline", "cnx-badge-outline"],
       "body": [
@@ -113,7 +113,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/badge.html"
     },
-  
+
     "Badge Secondary": {
       "prefix": ["shadcn-x-badge-secondary", "cnx-badge-secondary"],
       "body": [
@@ -123,7 +123,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/badge.html"
     },
-  
+
     "Button": {
       "prefix": ["shadcn-x-button", "cnx-button"],
       "body": [
@@ -139,8 +139,8 @@
         ],
         "description": "https://shadcn-vue.com/docs/components/calendar.html"
     },
-    
-  
+
+
     "Card": {
       "prefix": ["shadcn-x-card", "cnx-card"],
       "body": [
@@ -156,7 +156,7 @@
         "      Card Footer",
         "    </CardFooter>",
         "  </Card>",
-      ],    
+      ],
       "description": "https://shadcn-vue.com/docs/components/card.html"
     },
 
@@ -209,7 +209,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/carousel.html"
     },
-  
+
     "Checkbox": {
       "prefix": ["shadcn-x-checkbox", "cnx-checkbox"],
       "body": [
@@ -217,7 +217,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/checkbox.html"
     },
-  
+
     "Collapsible": {
       "prefix": ["shadcn-x-collapsible", "cnx-collapsible"],
       "body": [
@@ -232,7 +232,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/collapsible.html"
     },
-  
+
     "Command": {
       "prefix": ["shadcn-x-command", "cnx-command"],
       "body": [
@@ -257,7 +257,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/command.html"
     },
-  
+
     "Context Menu": {
       "prefix": ["shadcn-x-context-menu", "cnx-context-menu"],
       "body": [
@@ -274,7 +274,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/context-menu.html"
     },
-  
+
     "Dialog": {
       "prefix": ["shadcn-x-dialog", "cnx-dialog"],
       "body": [
@@ -318,7 +318,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/drawer.html"
     },
-  
+
     "Dropdown Menu": {
       "prefix": ["shadcn-x-dropdown-menu", "cnx-dropdown-menu"],
       "body": [
@@ -337,7 +337,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/dropdown-menu.html"
     },
-  
+
     "Hover Card": {
       "prefix": ["shadcn-x-hover-card", "cnx-hover-card"],
       "body": [
@@ -351,19 +351,19 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/hover-card.html"
     },
-  
+
     "Input": {
       "prefix": ["shadcn-x-input", "cnx-input"],
       "body": ["<Input />", ""],
       "description": "https://shadcn-vue.com/docs/components/input.html"
     },
-  
+
     "Label": {
       "prefix": ["shadcn-x-label", "cnx-label"],
       "body": ["<Label for=\"email\">Your email address</Label>", ""],
       "description": "https://shadcn-vue.com/docs/components/label.html"
     },
-  
+
     "Menubar": {
       "prefix": ["shadcn-x-menubar", "cnx-menubar"],
       "body": [
@@ -386,7 +386,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/menubar.html"
     },
-  
+
     "Navigation Menu": {
       "prefix": ["shadcn-x-navigation-menu", "cnx-navigation-menu"],
       "body": [
@@ -449,7 +449,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/pin-input.html"
     },
-  
+
     "Popover": {
       "prefix": ["shadcn-x-popover", "cnx-popover"],
       "body": [
@@ -461,13 +461,13 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/popover.html"
     },
-  
+
     "Progress": {
       "prefix": ["shadcn-x-progress", "cnx-progress"],
       "body": ["<Progress v-model=\"progress\" class=\"w-[60%]\" />", ""],
       "description": "https://shadcn-vue.com/docs/components/progress.html"
     },
-  
+
     "Radio Group": {
       "prefix": ["shadcn-x-radio-group", "cnx-radio-group"],
       "body": [
@@ -501,7 +501,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/resizable.html"
     },
-  
+
     "Scroll Area": {
       "prefix": ["shadcn-x-scroll-area", "cnx-scroll-area"],
       "body": [
@@ -517,7 +517,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/scroll-area.html"
     },
-  
+
     "Select": {
       "prefix": ["cnx-select", "shadcn-x-select"],
       "body": [
@@ -537,13 +537,13 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/select.html"
     },
-  
+
     "Separator": {
       "prefix": ["shadcn-x-separator", "cnx-separator"],
       "body": ["<Separator />", ""],
       "description": "https://shadcn-vue.com/docs/components/separator.html"
     },
-  
+
     "Sheet": {
       "prefix": ["shadcn-x-sheet", "cnx-sheet"],
       "body": [
@@ -562,7 +562,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/sheet.html"
     },
-  
+
     "Skeleton": {
       "prefix": ["shadcn-x-skeleton", "cnx-skeleton"],
       "body": [
@@ -576,7 +576,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/skeleton.html"
     },
-  
+
     "Slider": {
       "prefix": ["shadcn-x-slider", "cnx-slider"],
       "body": [
@@ -597,13 +597,13 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/sonner.html"
     },
-  
+
     "Switch": {
       "prefix": ["shadcn-x-switch", "cnx-switch"],
       "body": ["<Switch />", ""],
       "description": "https://shadcn-vue.com/docs/components/switch.html"
     },
-  
+
     "Table": {
       "prefix": ["shadcn-x-table", "cnx-table"],
       "body": [
@@ -634,10 +634,10 @@
         "      </TableRow>",
         "    </TableBody>",
         "  </Table>"
-      ],    
+      ],
       "description": "https://shadcn-vue.com/docs/components/table.html"
     },
-  
+
     "Tabs": {
       "prefix": ["shadcn-x-tabs", "cnx-tabs"],
       "body": [
@@ -676,7 +676,7 @@
       ],
       "description": "https://shadcn-vue.com/docs/components/tags-input.html"
     },
-  
+
     "Textarea": {
       "prefix": ["shadcn-x-textarea", "cnx-textarea"],
       "body": ["<Textarea />", ""],
@@ -699,13 +699,13 @@
         ],
         "description": "https://shadcn-vue.com/docs/components/toast.html"
     },
-  
+
     "Toggle": {
       "prefix": ["shadcn-x-toggle", "cnx-toggle"],
       "body": ["<Toggle>Toggle</Toggle>", ""],
       "description": "https://shadcn-vue.com/docs/components/toggle.html"
     },
-  
+
     "Tooltip": {
       "prefix": ["shadcn-x-tooltip", "cnx-tooltip"],
       "body": [
@@ -722,4 +722,3 @@
       "description": "https://shadcn-vue.com/docs/components/tooltip.html"
     }
   }
-  
