@@ -58,6 +58,40 @@ export const detectPackageManager = async (): Promise<PackageManager> => {
 };
 
 
+// Windows fsPath uses backslashes, which break in shells like Git Bash;
+// forward slashes work in every shell the command may run in.
+const toPosixPath = (p: string): string => p.replace(/\\/g, "/");
+
+// WSL cannot resolve Windows drive paths; it mounts them under /mnt/<drive>.
+const isWslDefaultTerminal = (): boolean => {
+  if (process.platform !== "win32") { return false; }
+
+  const config = vscode.workspace.getConfiguration("terminal.integrated");
+  const profileName = config.get<string>("defaultProfile.windows") ?? "";
+
+  if (/wsl/i.test(profileName)) { return true; }
+
+  const profiles =
+    config.get<Record<string, { source?: string; path?: string | string[] }>>(
+      "profiles.windows"
+    ) ?? {};
+  const profile = profiles[profileName];
+
+  if (!profile) { return false; }
+  if (profile.source === "WSL") { return true; }
+
+  const paths = Array.isArray(profile.path) ? profile.path : [profile.path];
+  return paths.some((p) => /wsl(\.exe)?$/i.test(p ?? ""));
+};
+
+const toWslPath = (p: string): string =>
+  p.replace(/^([a-z]):\//i, (_, drive: string) => `/mnt/${drive.toLowerCase()}/`);
+
+const toShellPath = (p: string): string => {
+  const posixPath = toPosixPath(p);
+  return isWslDefaultTerminal() ? toWslPath(posixPath) : posixPath;
+};
+
 export const getOrChooseCwd = async (): Promise<string> => {
   let cwd = "";
   const prefix = "${workspaceFolder}/";
@@ -68,11 +102,13 @@ export const getOrChooseCwd = async (): Promise<string> => {
 
   if (!workspaceFolders.length) { return "./"; }
 
-  const workspacePath = workspaceFolders[0]?.uri.fsPath ?? "";
-  const cwdFromConfig = vscode.workspace
-    .getConfiguration()
-    .get<string>("terminal.integrated.cwd")
-    ?.trim();
+  const workspacePath = toPosixPath(workspaceFolders[0]?.uri.fsPath ?? "");
+  const cwdFromConfig = toPosixPath(
+    vscode.workspace
+      .getConfiguration()
+      .get<string>("terminal.integrated.cwd")
+      ?.trim() ?? ""
+  );
 
   if (cwdFromConfig) {
     if (cwdFromConfig.startsWith(prefix)) {
@@ -84,7 +120,7 @@ export const getOrChooseCwd = async (): Promise<string> => {
       cwd = cwdFromConfig;
     }
 
-    return `${workspacePath}/${cwd}`;
+    return toShellPath(`${workspacePath}/${cwd}`);
   }
 
   const choice = await vscode.window.showQuickPick(
@@ -93,5 +129,7 @@ export const getOrChooseCwd = async (): Promise<string> => {
 
   if (!choice) { return "./"; }
 
-  return workspaceFolders.find((f) => f.name === choice)?.uri.fsPath ?? "./";
+  return toShellPath(
+    workspaceFolders.find((f) => f.name === choice)?.uri.fsPath ?? "./"
+  );
 };
