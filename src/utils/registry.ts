@@ -50,28 +50,28 @@ export const getInstallCmd = async (components: string[], cwd: string) => {
   const componentStr = components.join(" ");
 
   if (packageManager === "bun") {
-    return `bunx shadcn-vue add ${componentStr} -c ${cwd}`;
+    return `bunx shadcn-vue add ${componentStr} -c "${cwd}"`;
   }
 
   if (packageManager === "pnpm") {
-    return `pnpm dlx shadcn-vue@latest add ${componentStr} -c ${cwd}`;
+    return `pnpm dlx shadcn-vue@latest add ${componentStr} -c "${cwd}"`;
   }
 
-  return `npx shadcn-vue@latest add ${componentStr} -c ${cwd}`;
+  return `npx shadcn-vue@latest add ${componentStr} -c "${cwd}"`;
 };
 
 export const getInitCmd = async (cwd: string) => {
   const packageManager = await detectPackageManager();
 
   if (packageManager === "bun") {
-    return `bunx shadcn-vue@latest init -c ${cwd}`;
+    return `bunx shadcn-vue@latest init -c "${cwd}"`;
   }
 
   if (packageManager === "pnpm") {
-    return `pnpm dlx shadcn-vue@latest init -c ${cwd}`;
+    return `pnpm dlx shadcn-vue@latest init -c "${cwd}"`;
   }
 
-  return `npx shadcn-vue@latest init -c ${cwd}`;
+  return `npx shadcn-vue@latest init -c "${cwd}"`;
 };
 
 export const getComponentDocLink = (component: string) => {
