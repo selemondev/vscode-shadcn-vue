@@ -120,7 +120,9 @@ export const getOrChooseCwd = async (): Promise<string> => {
       cwd = cwdFromConfig;
     }
 
-    return toShellPath(`${workspacePath}/${cwd}`);
+    const isAbsoluteCwd =
+      cwd.startsWith("/") || /^[a-z]:\//i.test(cwd) || cwd.startsWith("//");
+    return toShellPath(isAbsoluteCwd ? cwd : `${workspacePath}/${cwd}`);
   }
 
   const choice = await vscode.window.showQuickPick(
