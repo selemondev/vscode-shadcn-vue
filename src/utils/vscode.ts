@@ -177,6 +177,34 @@ export const getOrChooseCwd = async (): Promise<string> => {
     return toShellPath(isAbsoluteCwd ? cwd : `${workspacePath}/${cwd}`);
   }
 
+  // Scan for components.json to support monorepo sub-packages
+  const componentsJsonFiles = await vscode.workspace.findFiles(
+    "**/components.json",
+    "**/node_modules/**",
+    20
+  );
+
+  if (componentsJsonFiles.length > 1) {
+    const items = componentsJsonFiles.map((f) => ({
+      label: vscode.workspace.asRelativePath(f, false),
+      uri: f,
+    }));
+    const picked = await vscode.window.showQuickPick(items, {
+      placeHolder: "Select the package containing components.json",
+    });
+    if (picked) {
+      const dir = vscode.Uri.joinPath(picked.uri, "..");
+      return toShellPath(toPosixPath(dir.fsPath));
+    }
+    return "./";
+  }
+
+  if (componentsJsonFiles.length === 1) {
+    const dir = vscode.Uri.joinPath(componentsJsonFiles[0], "..");
+    return toShellPath(toPosixPath(dir.fsPath));
+  }
+
+  // No components.json found — fall back to workspace picker
   const choice = await vscode.window.showQuickPick(
     workspaceFolders.map((f) => f.name)
   );
