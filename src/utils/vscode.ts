@@ -32,7 +32,59 @@ export const getFileStat = async (fileName: string) => {
   }
 };
 
+const PM_FROM_PACKAGE_JSON: Record<string, PackageManager> = {
+  npm: "npm",
+  pnpm: "pnpm",
+  yarn: "yarn",
+  bun: "bun",
+};
+
+/**
+ * Read the workspace's package.json and extract the package manager name.
+ *
+ * Checks two fields (in priority order):
+ * 1. `packageManager` — Corepack standard, e.g. `"pnpm@10.25.0"`
+ * 2. `devEngines.packageManager.name` — npm v11+ enforcement field
+ *
+ * Returns null when neither field is present or the value is unrecognised.
+ */
+const detectPackageManagerFromPackageJson = async (): Promise<PackageManager | null> => {
+  const workspaceFolders = vscode.workspace.workspaceFolders;
+  if (!workspaceFolders) { return null; }
+
+  for (const workspaceFolder of workspaceFolders) {
+    const pkgUri = vscode.Uri.joinPath(workspaceFolder.uri, "package.json");
+    try {
+      const raw = await vscode.workspace.fs.readFile(pkgUri);
+      const pkg = JSON.parse(Buffer.from(raw).toString("utf-8"));
+
+      // 1. Corepack `packageManager` field: "pnpm@10.25.0+sha512.xxx"
+      if (typeof pkg.packageManager === "string") {
+        const name = pkg.packageManager.split("@")[0]?.toLowerCase();
+        if (name && name in PM_FROM_PACKAGE_JSON) {
+          return PM_FROM_PACKAGE_JSON[name];
+        }
+      }
+
+      // 2. `devEngines.packageManager.name` (npm v11+)
+      const devPmName = pkg.devEngines?.packageManager?.name?.toLowerCase();
+      if (devPmName && devPmName in PM_FROM_PACKAGE_JSON) {
+        return PM_FROM_PACKAGE_JSON[devPmName];
+      }
+    } catch {
+      // package.json missing or unparseable — try next folder
+    }
+  }
+
+  return null;
+};
+
 export const detectPackageManager = async (): Promise<PackageManager> => {
+  // 1. Authoritative source: package.json fields
+  const fromPkg = await detectPackageManagerFromPackageJson();
+  if (fromPkg) { return fromPkg; }
+
+  // 2. Lock-file fallback (original logic)
   const lockFiles = ["bun.lock", "bun.lockb"];
   const results = await Promise.all(
     lockFiles.map((file) =>
