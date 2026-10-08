@@ -32,7 +32,59 @@ export const getFileStat = async (fileName: string) => {
   }
 };
 
+const PM_FROM_PACKAGE_JSON: Record<string, PackageManager> = {
+  npm: "npm",
+  pnpm: "pnpm",
+  yarn: "yarn",
+  bun: "bun",
+};
+
+/**
+ * Read the workspace's package.json and extract the package manager name.
+ *
+ * Checks two fields (in priority order):
+ * 1. `packageManager` — Corepack standard, e.g. `"pnpm@10.25.0"`
+ * 2. `devEngines.packageManager.name` — npm v11+ enforcement field
+ *
+ * Returns null when neither field is present or the value is unrecognised.
+ */
+const detectPackageManagerFromPackageJson = async (): Promise<PackageManager | null> => {
+  const workspaceFolders = vscode.workspace.workspaceFolders;
+  if (!workspaceFolders) { return null; }
+
+  for (const workspaceFolder of workspaceFolders) {
+    const pkgUri = vscode.Uri.joinPath(workspaceFolder.uri, "package.json");
+    try {
+      const raw = await vscode.workspace.fs.readFile(pkgUri);
+      const pkg = JSON.parse(Buffer.from(raw).toString("utf-8"));
+
+      // 1. Corepack `packageManager` field: "pnpm@10.25.0+sha512.xxx"
+      if (typeof pkg.packageManager === "string") {
+        const name = pkg.packageManager.split("@")[0]?.toLowerCase();
+        if (name && name in PM_FROM_PACKAGE_JSON) {
+          return PM_FROM_PACKAGE_JSON[name];
+        }
+      }
+
+      // 2. `devEngines.packageManager.name` (npm v11+)
+      const devPmName = pkg.devEngines?.packageManager?.name?.toLowerCase();
+      if (devPmName && devPmName in PM_FROM_PACKAGE_JSON) {
+        return PM_FROM_PACKAGE_JSON[devPmName];
+      }
+    } catch {
+      // package.json missing or unparseable — try next folder
+    }
+  }
+
+  return null;
+};
+
 export const detectPackageManager = async (): Promise<PackageManager> => {
+  // 1. Authoritative source: package.json fields
+  const fromPkg = await detectPackageManagerFromPackageJson();
+  if (fromPkg) { return fromPkg; }
+
+  // 2. Lock-file fallback (original logic)
   const lockFiles = ["bun.lock", "bun.lockb"];
   const results = await Promise.all(
     lockFiles.map((file) =>
@@ -125,6 +177,34 @@ export const getOrChooseCwd = async (): Promise<string> => {
     return toShellPath(isAbsoluteCwd ? cwd : `${workspacePath}/${cwd}`);
   }
 
+  // Scan for components.json to support monorepo sub-packages
+  const componentsJsonFiles = await vscode.workspace.findFiles(
+    "**/components.json",
+    "**/node_modules/**",
+    20
+  );
+
+  if (componentsJsonFiles.length > 1) {
+    const items = componentsJsonFiles.map((f) => ({
+      label: vscode.workspace.asRelativePath(f, false),
+      uri: f,
+    }));
+    const picked = await vscode.window.showQuickPick(items, {
+      placeHolder: "Select the package containing components.json",
+    });
+    if (picked) {
+      const dir = vscode.Uri.joinPath(picked.uri, "..");
+      return toShellPath(toPosixPath(dir.fsPath));
+    }
+    return "./";
+  }
+
+  if (componentsJsonFiles.length === 1) {
+    const dir = vscode.Uri.joinPath(componentsJsonFiles[0], "..");
+    return toShellPath(toPosixPath(dir.fsPath));
+  }
+
+  // No components.json found — fall back to workspace picker
   const choice = await vscode.window.showQuickPick(
     workspaceFolders.map((f) => f.name)
   );
