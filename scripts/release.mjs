@@ -24,6 +24,7 @@ if (explicit) {
 	writeFileSync(ROOT, JSON.stringify(pkg, null, 2) + "\n");
 }
 
+execSync("bun run automd", { stdio: "inherit" });
 execSync("git add -A", { stdio: "inherit" });
 execSync(`git commit -m "chore(release): v${version}"`, { stdio: "inherit" });
 execSync(`git tag -a v${version} -m "v${version}"`, { stdio: "inherit" });
