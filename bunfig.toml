@@ -1,3 +1,2 @@
 [install]
-# Only install package versions published at least 1 day ago (supply-chain safety).
 minimumReleaseAge = 86400
