@@ -92,14 +92,13 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "pnpm build",
-    "generate:patch:release": "node scripts/release.mjs",
-    "generate:minor:release": "node scripts/release.mjs --minor",
-    "generate:major:release": "node scripts/release.mjs --major",
+    "generate:patch:release": "bun scripts/release.mjs",
+    "generate:minor:release": "bun scripts/release.mjs --minor",
+    "generate:major:release": "bun scripts/release.mjs --major",
     "build": "tsup",
-    "dev": "pnpm build -- --watch",
-    "vscode": "pnpx vsce publish --no-dependencies",
-    "ovsx": "pnpx ovsx publish --no-dependencies",
+    "dev": "bun run build --watch",
+    "vscode": "bun run build && bunx @vscode/vsce publish --no-dependencies",
+    "ovsx": "bun run build && bunx ovsx publish --no-dependencies",
     "lint": "eslint src --ext ts"
   },
   "devDependencies": {
@@ -114,5 +113,5 @@
   "dependencies": {
     "ofetch": "^1.5.1"
   },
-  "packageManager": "pnpm@12.10.1+sha512.ba40a37eb1a370d60fea8c4cf1d364c13bcccef518e98ad2bcee954f539d38da37458e58261a3fa55e06523450ea0ffff9f497b135be41f2c15c1642bacace6c"
+  "packageManager": "bun@1.4.2"
 }
