@@ -5,6 +5,19 @@
  </h1>
 </p>
 
+<!-- automd:vscode-badges -->
+
+[![CI](https://github.com/selemondev/vscode-shadcn-vue/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/selemondev/vscode-shadcn-vue/actions/workflows/ci.yml)
+[![VS Marketplace version](https://vsmarketplacebadges.dev/version-short/Selemondev.shadcn-vue.svg)](https://marketplace.visualstudio.com/items?itemName=Selemondev.shadcn-vue)
+[![VS Marketplace installs](https://vsmarketplacebadges.dev/installs-short/Selemondev.shadcn-vue.svg)](https://marketplace.visualstudio.com/items?itemName=Selemondev.shadcn-vue)
+[![VS Marketplace downloads](https://vsmarketplacebadges.dev/downloads-short/Selemondev.shadcn-vue.svg)](https://marketplace.visualstudio.com/items?itemName=Selemondev.shadcn-vue)
+[![VS Marketplace rating](https://vsmarketplacebadges.dev/rating-short/Selemondev.shadcn-vue.svg)](https://marketplace.visualstudio.com/items?itemName=Selemondev.shadcn-vue&ssr=false#review-details)
+[![Open VSX version](https://img.shields.io/open-vsx/v/Selemondev/shadcn-vue)](https://open-vsx.org/extension/Selemondev/shadcn-vue)
+[![Open VSX downloads](https://img.shields.io/open-vsx/dt/Selemondev/shadcn-vue)](https://open-vsx.org/extension/Selemondev/shadcn-vue)
+[![License](https://img.shields.io/github/license/selemondev/vscode-shadcn-vue)](https://github.com/selemondev/vscode-shadcn-vue/blob/master/LICENSE)
+
+<!-- /automd -->
+
 This VSCode extension enables you to install [shadcn/vue](https://shadcn-vue.com) components directly from your IDE ✨.
 
 ## Initialize the Shadcn/Vue CLI.
