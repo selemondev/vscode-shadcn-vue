@@ -4,6 +4,18 @@ All notable changes to the "shadcn-vue" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v1.0.1
+
+[compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v1.0.0...v1.0.1)
+
+### 🏡 Chore
+
+- Migrate package manager from pnpm to bun ([06b231c](https://github.com/selemondev/vscode-shadcn-vue/commit/06b231c))
+
+### ❤️ Contributors
+
+- Selemondev ([@selemondev](https://github.com/selemondev))
+
 ## v1.0.0
 
 [compare changes](https://github.com/selemondev/vscode-shadcn-vue/compare/v0.2.2...v1.0.0)

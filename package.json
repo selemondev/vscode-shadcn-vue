@@ -1,6 +1,6 @@
 {
   "name": "shadcn-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "shadcn/vue",
   "description": "Integrate components and snippets from Shadcn/Vue directly into your IDE.",
   "publisher": "Selemondev",
